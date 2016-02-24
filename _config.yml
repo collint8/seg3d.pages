@@ -69,6 +69,9 @@ defaults:
     values:
       type: 'info'
 
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 detach:  false
 port:    9002
