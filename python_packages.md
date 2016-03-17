@@ -1,5 +1,7 @@
 ---
 title: Python Packages and Matlab
+category: info
+tags: python
 ---
 
 # Installing packages

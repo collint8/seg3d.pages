@@ -1,5 +1,7 @@
 ---
 title: Build
+category: info
+tags: build
 ---
 
 Table of Contents

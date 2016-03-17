@@ -33,7 +33,7 @@
 
         <ul>
         {% for page in site.pages %}
-          {% if page.type == "info" %}
+          {% if page.category == "info" %}
            <h3> <a href={{ page.url }}>{{ page.title }}</a> </h3>
           {% endif %}
         {% endfor %}

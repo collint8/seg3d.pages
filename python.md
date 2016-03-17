@@ -1,5 +1,7 @@
 ---
 title: Python Code Snippets
+category: info
+tags: python
 ---
 
 # Python Snippets
