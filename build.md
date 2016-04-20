@@ -9,7 +9,7 @@ Table of Contents
 
 * [Installing Seg3D from source](#installing-seg3d-from-source)
   * [Compiler Requirements](#compiler-requirements)
-    * [Windows Vista, 7, 8](#windows-vista-7-8)
+    * [Windows](#windows)
     * [Mac OS X](#mac-os-x)
     * [Linux](#linux)
   * [Dependencies](#dependencies)
@@ -18,6 +18,7 @@ Table of Contents
     * [Mac OS X](#mac-os-x-1)
     * [Linux](#linux-1)
   * [Compiling Seg3D](#compiling-seg3d)
+    * [Optional Image Registration Tools](#optional-image-registration-tools)
 * [Seg3D Data](#seg3d-data)
 * [Seg3D Support](#seg3d-support)
 
@@ -27,13 +28,13 @@ Table of Contents
 
 ## Compiler Requirements
 
-**C++11 64-bit compiler support is required.**
+**At least C++11 64-bit compiler support is required.**
 
-### Windows Vista, 7, 8
+### Windows
 
-The current source code was optimized for use with Visual Studio (VS2013).
-The code should compile on Windows Vista, 7 and 8 using the Visual Studio Express versions as well. The code
-has not been tested under Cygwin or MinGW compilers.
+The current source code must be compiled with the 64-bit version of Visual Studio 2013.
+Visual Studio 2015 support is coming soon.
+The code has not been tested under Cygwin or MinGW compilers.
 
 ### Mac OS X
 
@@ -45,7 +46,7 @@ environments on OS X 10.7+.
 ### Linux
 
 The code base has been tested for use with GCC, and this is the recommended compiler for
-linux. Compiler must support C++11.
+linux. **Compiler must support C++11.**
 
 
 ## Dependencies
@@ -84,7 +85,7 @@ cd bin
 cmake ../Superbuild
 ```
 
-The console version ccmake, or GUI version can also be used.
+The console version **ccmake**, or GUI version can also be used.
 You may be prompted to specify your location of the Qt installation.
 If you installed Qt in the default location, it should find Qt automatically.
 After configuration is done, generate the make files or project files for your favorite
@@ -93,10 +94,20 @@ development environment and build.
 Following the previous example, the Seg3D application will be built in bin/Seg3D.
 
 A bash build script (build.sh) is also available for Linux and Mac OS X to simplify the process.
-Usage information is available using the --help flag:
+Usage information is available using the ***--help*** flag:
 
 ```
 ./build.sh --help
+```
+
+### Optional Image Registration Tools
+
+To build the optional [python-based image registrations tools]({{ site.github.url }}ir-tools.html), the CMake option **BUILD_MOSAIC_TOOLS** must be turned on, either on the command line, or in the console or GUI interfaces.
+On the command line:
+
+```
+cd bin
+cmake -DBUILD_MOSAIC_TOOLS:BOOL=ON ../Superbuild
 ```
 
 # Seg3D Data
