@@ -10,15 +10,16 @@ tags: python
 There are many ways to install packages in python. pip is an easy way that is usually included with python.
 
 ## Installing pip
-If pip is not installed for the Seg3D installation of python, follow these directions: https://pip.pypa.io/en/stable/installing/.  Be sure to use the python in `"scirun_root"/bin/Externals/Install/Python_external/bin/`
+If pip is not installed for the Seg3D installation of python, follow
+these directions: https://pip.pypa.io/en/stable/installing/.  Be sure to use the python in `"seg3d_root"/bin/Externals/Install/Python_external/bin/`
 
 ## Installing numpy, scipy, and other major packages
 * make sure that pip is installed
 * in the terminal:
-  * `cd "scirun_root"/bin/Externals/Install/Python_external/bin/`
+  * `cd "seg3d_root"/bin/Externals/Install/Python_external/bin/`
   * `./python3 -m pip install numpy`
 
-### Installing Matlab engine for python in SCIRun
+### Installing Matlab engine for python in Seg3D
 In the terminal:
   * `cd "matlab_root"/extern/engines/python`
   * `"seg3d_root"/bin/Externals/Install/Python_external/bin/python3.4 setup.py build --build-base="builddir" install --prefix="installdir"`
