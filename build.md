@@ -136,4 +136,4 @@ Seg3D sample data (also used in the tutorial) is available [here](https://github
 # Seg3D Support
 
 For questions and issues regarding building the software from source, 
-please email our support list: seg3d@sci.utah.edu
+please email our support list: [seg3d@sci.utah.edu](mailto:seg3d@sci.utah.edu)
