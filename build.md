@@ -14,9 +14,13 @@ Table of Contents
     * [Linux](#linux)
   * [Dependencies](#dependencies)
     * [Qt](#qt)
-    * [Windows](#windows)
-    * [Mac OS X](#mac-os-x-1)
-    * [Linux](#linux-1)
+      * [Seg3D 2.4 And Newer](#seg3d-24-and-newer)
+        * [Mac OS X](#mac-os-x-2)
+        * [Linux](#linux-2)
+      * [Seg3D 2.0 to 2.3](#seg3d-20-to-23)
+        * [Windows](#windows)
+        * [Mac OS X](#mac-os-x-1)
+        * [Linux](#linux-1)
   * [Compiling Seg3D](#compiling-seg3d)
     * [Optional Image Registration Tools](#optional-image-registration-tools)
 * [Seg3D Data](#seg3d-data)
@@ -38,43 +42,58 @@ The code has not been tested under Cygwin or MinGW compilers.
 
 ### Mac OS X
 
-The source code base was built with Xcode 4-6 as well as GNU Make and works for both 
-environments on OS X 10.7+.
-
-**Xcode 7 is not currently supported.**
+The source code base was built with Xcode 5-7 as well as GNU Make and works for both environments on OS X 10.8+.
 
 ### Linux
 
 The code base has been tested for use with GCC, and this is the recommended compiler for
 linux. **Compiler must support C++11.**
 
-
 ## Dependencies
 
 ### Qt
 
-Before building Seg3D, please make sure that Qt 4.7 or higher has been installed on your system.
+#### Seg3D 2.4 And Newer
 
-#### Windows
+Before building Seg3D, please make sure that **Qt 5.5** has been installed on your system.
+
+##### Mac OS X
+
+Qt binaries are available on the Qt website or can be built from source code.
+Clang with C++11 support is required.
+
+##### Linux
+
+Qt 5 static libraries are **NOT** supported. If building from source, ensure that the shared library build is enabled.
+
+#### Seg3D 2.0 to 2.3
+
+Before building Seg3D, please make sure that **Qt 4.7-4.8** has been installed on your system.
+
+##### Windows
 
 A Visual Studio binary build is available.
 To our knowledge the Windows Visual Studio development libraries are only available in a 32-bit version.
 A 64-bit version can be built from the source code download, configuring it as described on the Qt webpage.
 
-#### Mac OS X
+##### Mac OS X
 
 Qt binaries are available on the Qt website or can be built from source code.
 Clang with C++11 support is required.
 
-#### Linux
+##### Linux
 
 Qt is available from most package managers. Look for Qt 4.7-4.8.
+
+### CMake
+
+[CMake](https://cmake.org/) versions 2.8 - 3.4 are supported.
 
 
 ## Compiling Seg3D
 
-Once you have obtained a compatible compiler and installed Qt 4.7 on your system, you need to 
-download and install CMake 2.8 (http://www.cmake.org/files/v2.8) to actually build the software.
+Once you have obtained a compatible compiler and installed Qt on your system, you need to 
+download and install CMake (http://www.cmake.org) to actually build the software.
 CMake is a platform independent configuring system that is used for generating Makefiles,
 Visual Studio project files, or Xcode project files.
 Once CMake has been installed, run CMake from your build (bin) directory and give a path to the CMake Superbuild directory containing the master CMakeLists.txt file.
@@ -85,7 +104,7 @@ cd bin
 cmake ../Superbuild
 ```
 
-The console version **ccmake**, or GUI version can also be used.
+The console version ``ccmake``, or GUI version can also be used.
 You may be prompted to specify your location of the Qt installation.
 If you installed Qt in the default location, it should find Qt automatically.
 After configuration is done, generate the make files or project files for your favorite
