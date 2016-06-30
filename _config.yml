@@ -1,5 +1,6 @@
 source:       .
 destination:  ./_site
+include:      [doxygen]
 markdown:     kramdown
 kramdown:
   input:          GFM

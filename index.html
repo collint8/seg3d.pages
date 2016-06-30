@@ -31,13 +31,23 @@
       <section>
       <p>Seg3D (<a href="http://www.seg3d.org">www.seg3d.org</a>) is a free volume segmentation and processing tool developed by the NIH Center for Integrative Biomedical Computing at the University of Utah Scientific Computing and Imaging (SCI) Institute.</p>
 
-        <h2>Documentation</h2>
+      <h2>Installation</h2>
+
+      <p>Check the <a href={{ site.github.url }}/specs.html>Platform Specifications</a> for system requirements.</p>
+
+      <p><a href="https://github.com/SCIInstitute/Seg3D/releases">Installers</a> are provided for Windows and Mac OS X. Linux users need to build Seg3D from <a href={{ site.github.url }}/build.html>source</a>.</p>
+
+      <h2>Documentation</h2>
+
         <ul>
         {% for page in site.pages %}
           {% if page.category == "info" %}
            <h3> <a href={{ site.github.url }}{{ page.url }}>{{ page.title }}</a> </h3>
           {% endif %}
         {% endfor %}
+        <h3><a
+        href="http://scirundocwiki.sci.utah.edu/SCIRunDocs/index.php5/CIBC:Seg3D2:Reference">Tool and Filter Reference</a></h3>
+        <h3><a href={{ site.github.url }}/doxygen/html/index.html>Doxygen Code Reference</a></h3>
         </ul>
       </section>
     </div>
