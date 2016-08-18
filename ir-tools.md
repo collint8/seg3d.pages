@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Ir-tools in Seg3D
 category: info
 tags: ir-tools, python

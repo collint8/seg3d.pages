@@ -1,5 +1,6 @@
 ---
-title: Platform Specifications
+layout: default
+title: Platform Support
 category: info
 tags: build
 ---
@@ -43,11 +44,9 @@ We are currently testing on 64-bit Ubuntu 14.04.2 LTS and 13.04. We usually buil
 Ubuntu 14.x and 13.x Packages
 It is easy to get the necessary packages listed below via the Synaptic package manager or the command line instructions below:
 
-```
-sudo apt-get install cmake-qt-gui cmake-curses-gui build-essential \
+``` sudo apt-get install cmake-qt-gui cmake-curses-gui build-essential \
 libxft-dev libxi-dev libxmu-headers freeglut3-dev \
-libtiff4-dev git
-```
+libtiff4-dev git ```
 
 Qt SDK
 Version 4.8 is recommended. The libqt4-dev package provides Qt 4.8 on Ubuntu 14.x and 13.x.

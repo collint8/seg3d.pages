@@ -1,6 +1,7 @@
 ---
+layout: default
 title: Python Code Snippets
-category: info
+category: python
 tags: python
 ---
 
