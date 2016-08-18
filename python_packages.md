@@ -6,31 +6,44 @@ tags: python
 ---
 
 # Installing packages
-* If there is an installation of the packages with other python builds on the machine, the system path can be used to use those packages.  
 
-There are many ways to install packages in python. pip is an easy way that is usually included with python.
+If there is an installation of the packages with other python builds on the machine, the system path can be used to use those packages.
+There are many ways to install packages in Python. pip is an easy way that is usually included with Python.
 
 ## Installing pip
+
 If pip is not installed for the Seg3D installation of python, follow these [directions](https://pip.pypa.io/en/stable/installing/){:target="_blank"}.
-Be sure to use the python in `"seg3d_root"/bin/Externals/Install/Python_external/bin/`
+Be sure to use the python included in the Seg3D application.
+With OS x versions, it is in `Seg3D2.app/Contents/Frameworks/Python.framework/Versions/Current/bin`.
 
-## Installing numpy, scipy, and other major packages
-* make sure that pip is installed
+### Installing numpy, scipy, and other major packages
+
+* Make sure that pip is installed
 * in the terminal:
-
-```cd "seg3d_root"/bin/Externals/Install/Python_external/bin/```
+```cd Seg3D2.app/Contents/Frameworks/Python.framework/Versions/Current/bin```
 ```./python3 -m pip install numpy```
 
-### Installing Matlab engine for python in Seg3D
+Make sure that the package is found in `Seg3D2.app/Contents/Frameworks/Python.framework/Versions/Current/lib/python3.4/site-packages`.
+
+#### Installing Matlab engine for Python in Seg3D
+
 In the terminal:
-
 ```cd "matlab_root"/extern/engines/python```
-```"seg3d_root"/bin/Externals/Install/Python_external/bin/python3.4 setup.py build --build-base="builddir" install --prefix="installdir"```
+```Seg3D2.app/Contents/Frameworks/Python.framework/Versions/Current/bin/python3.4 setup.py build --build-base="builddir" install --prefix="installdir"```
 
-Full instructions are located at the [mathworks site](http://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html){:target="_blank"}.
+Make sure that the package (matlab and matlabengineforpython-…) is found in `Seg3D2.app/Contents/Frameworks/Python.framework/Versions/Current/lib/python3.4/site-packages`
+
+Full instructions are located on the [mathworks site](http://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html){:target="_blank"}.
   
 # Matlab engine in Seg3D (through Python)
 
-In Seg3D, Matlab code and functions can be run using the matlab engine for python in the python console or python interface.
-To do so, make sure that the matlab engine is installed (previous section).
-Full documentation can be found at the [mathworks site](http://www.mathworks.com/help/matlab/matlab-engine-for-python.html){:target="_blank"}.
+In Seg3D, Matlab code and functions can be run using the Matlab engine for Python in the python console or Python interface.
+To do so, make sure that the Matlab engine is installed (previous section).
+
+To run the Matlab engine in the Python console in Seg3D, the **DYLD_LIBRARY_PATH** environment variable needs to be set to find python libraries and the matlab engine:
+
+``` export DYLD_LIBRARY_PATH="path"/Seg3D2.app/Contents/Frameworks/Python.framework/Versions/Current/lib: "matlab_root"/extern/engines/python/dist/matlab/ ```
+
+This can be added to the .bashrc file or you could try the /etc/launchd.conf file.
+
+Full documentation for the Matlab engine can be found on the [mathworks site](http://www.mathworks.com/help/matlab/matlab-engine-for-python.html){:target="_blank"}.
