@@ -1,13 +1,16 @@
 ---
-layout: default
 title: Copy/Paste
 category: info
-tags: tools
+tool: tools
 ---
 
-# Copy/Paste
+# {{ page.title }}
 
-## Brief Description
+## Category
+
+**{{ page.tool }}**
+
+## Description
 
 ### Summary
 
@@ -23,4 +26,5 @@ The paste option is a little more complicated, as the user must specify the slic
 
 This tool will modify the original layer without an option to create a new layer with the action. 
 
-![alt text](https://github.com/collint8/seg3d.pages/images/CopyPasteGUI.png)
+{% capture url % }{% include url.md %}{% endcapture %}
+{{ url }}

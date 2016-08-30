@@ -1,11 +1,14 @@
 ---
-layout: default
 title: Crop
-category: info
-tags: tools
+category: ToolDocs 
+tool: tools
 ---
 
-# {{Crop}}
+# {{ page.title }}
+
+## Category
+
+**{{ page.category }}**
 
 ## Description
 
@@ -21,4 +24,5 @@ The crop widget is shown as a red box in the 2D viewers. This can be adjusted in
 
 Currently, data layers should not have more than 4096 pixels in a single dimension, as data layers are not rendered as bricks but as a single texture.  
 
-![alt image](https://github.com/collint8/seg3d.pages/tree/gh-pages/images/Crop.png)
+{% capture url %}{% include url.md %}{% endcapture %}
+{{ url }}

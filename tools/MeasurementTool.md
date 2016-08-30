@@ -1,11 +1,14 @@
 ---
-layout: default
-title: MeasureTool
-category: info
-tags: tools
+title: Measure
+category: ToolDocs 
+tool: tools
 ---
 
-# Measure
+# {{ page.title }} 
+
+## Category
+
+**{{ page.tool }}**
 
 ## Description
 
@@ -21,10 +24,11 @@ measurement.
 Back in the general tab, the active layer can be deleted and the opacity of the visualizations in the viewers can be adjusted. Both tabs allow switching between pixel (indexed) and actual (geometric) distances. When this is changed in the active measurement tab, it changes all the measurements.
 
 List of keyboard and mouse actions in the for the Measure Tool
+
 | Action              | Function      |
 | :-----------------: | :-----------: |
 | ctrl/cmd            | snap to axis  |
 | middle mouse button | snap to slice |
 
-
-![alt text](http://github.com/collint8/seg3g.pages/tree/gh-pages/images/MeasurementGUI.png)
+{% capture url %}{% include url.md%}{% endcapture %}
+{{ url }}

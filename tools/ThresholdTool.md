@@ -1,11 +1,14 @@
 ---
-layout: default
-title: ThresholdTool
-category: info
-tags: tools
+title: Threshold
+category: ToolDocs 
+tool: tools
 ---
 
-# Threshold
+# {{ page.title }} 
+
+## Category
+
+**{{ page.tool }}**
 
 ## Description
 
@@ -27,4 +30,5 @@ List of keyboard and mouse actions in the for the threshold tool
 | :----: | ------------------------------------- |
 | M      | toggle visibility of the preview mask |
 
-![alt text](http://github.com/collint8/seg3g.pages/tree/gh-pages/images/ThresholdGUI.png)
+{% capture url %}{% include url.md%}{% endcapture %}
+{{ url }}

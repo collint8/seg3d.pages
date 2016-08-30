@@ -1,11 +1,14 @@
 ---
-layout: default
-title: PointSetRegistrationTool
-category: info
-tags: tools
+title: PointSetRegistration
+category: ToolDocs 
+tool: tools
 ---
 
-# Point Set Registration
+# {{ page.title }} 
+
+## Category
+
+**{{ page.tool }}**
 
 ## Description
 
@@ -19,4 +22,5 @@ The point set registration tool will register one mask layer to another mask lay
 
 To run this registration, choose for the first input the mask layer in the destination frame (to register to) and the mask to change (register) as the second input. The ideas is that these would be in separate layer groups. Clicking the register button will create a new layer in the group of the first input and the transformation will be saved and displayer (translation and rotation). There will be a list of other mask layers from the second input's group with which the user can select the layer on which to perform the saved transform. Upon pressing transform, more layers will be generated in the group of the first input layer.
 
-![alt text](http://github.com/collint8/seg3g.pages/tree/gh-pages/images/ PointSetRegistrationGUI.png)
+{% capture url %}{% include url.md%}{% endcapture %}
+{{ url }}

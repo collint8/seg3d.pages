@@ -1,14 +1,16 @@
 ---
-layout: default
-title: PaintBrushTool
-category: info
-tags: tools
+title: PaintBrush
+category: ToolDocs 
+tool: tools
 ---
 
-# Paint Brush
+# {{ page.title }} 
+
+## Category
+
+**{{ page.tool }}**
 
 ## Description
-
 
 ### Summary
 
@@ -37,5 +39,5 @@ List of keyboard and mouse actions in the for the Paint Brush Tool
 | F               | paint flood fill             |
 | E               | erase flood fill             | 
 
-
-![alt text](http://github.com/collint8/seg3g.pages/tree/gh-pages/images/PaintBrushGUI.png)
+{% capture url %}{% include url.md%}{% endcapture %}
+{{ url }}

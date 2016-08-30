@@ -1,11 +1,14 @@
 ---
-layout: default
 title: SpeedlineTool
-category: info
-tags: tools
+category: ToolDocs 
+tool: tools
 ---
 
-# Speedline
+# {{ page.title }} 
+
+## Category
+
+**{{ page.tool }}**
 
 ## Description
 
@@ -33,4 +36,5 @@ Table: Keyboard and mouse actions for the Speedline Tool.
 | E           | Erase flood fill  |
 | C           | Clear Seed points |
 
-![alt text](http://github.com/collint8/seg3g.pages/tree/gh-pages/images/SpeedlineGUI.png)
+{% capture url %}{% include url.md%}{% endcapture %}
+{{ url }}
