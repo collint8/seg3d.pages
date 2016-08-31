@@ -3,4 +3,4 @@
 {% for item in cannon offset:2 %}
   {% assign relative-baseurl = relative-baseurl | append:"../" %}
 {% endfor%} 
-[Seg3D tools]({{ relative-baseurl }}Tools.md
+[Seg3D Tools]({{ relative-baseurl }}tools.md)
