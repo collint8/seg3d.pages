@@ -32,15 +32,4 @@ category: info
 
 {% assign sortedpages = toolpages | strip | strip_newlines | split: '?' | sort %}
 
-{% for pagestring in sortedpages %}
-  {% assign pageitems = pagestring | split: '$' %}
-  {% if pageitems[0] %}
-## {{ pageitems[0] }}
-    {% for item in pageitems %}
-      {% comment %}skip category list item (index 0){% endcomment %}
-      {% if forloop.first %} {% continue %} {% endif%}
-      {% assign linkitem = item | split: '#' %}
-**[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank")**
-    {% endfor %}
-  {% endif %}
-{% endfor %}
+{% for pagestring in sortedpages %}{% assign pageitems = pagestring | split: '$' %}{% if pageitems[0] %}## {{ pageitems[0] }}{% for item in pageitems %}{% comment %}skip category list item (index 0){% endcomment %}{% if forloop.first %} {% continue %} {% endif%}{% assign linkitem = item | split: '#' %}**[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank")**{% endfor %}{% endif %}{% endfor %}
