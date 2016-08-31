@@ -1,7 +1,7 @@
 ---
 title: Copy/Paste
-category: info
-tool: tools
+category: ToolDocs
+tool: Tools
 ---
 
 # {{ page.title }}
@@ -25,6 +25,9 @@ The Copy/Paste tool has two functions, copy and paste. The copy buffer only save
 The paste option is a little more complicated, as the user must specify the slice boundaries for the pasting. This can be done using the provided sliders of by navigating the slice and pressing the grab from viewer. The user will need to ensure that the same plane is chosen for the pasting and the copied slice. Also, it should be noted that the software will not constrain the maximum to be more than the minimum, or vis versa. If the maximum is lower than the minimum, the tool will still use the slices described and the slices will be pasted. Press the *paste* button when the correct slice range is specified to finish.
 
 This tool will modify the original layer without an option to create a new layer with the action. 
+
+{% capture image % }{% include imageurl.md %}{% endcapture %}
+{{ image }}
 
 {% capture url % }{% include url.md %}{% endcapture %}
 {{ url }}
