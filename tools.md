@@ -15,7 +15,7 @@ category: info
 
 {% for cat in categories %}
   {% unless tmp contains cat %}
-    {% capture tmp %}{{ tnp}} {{ cat}}{% endcapture %}
+    {% capture tmp %}{{ tmp }} {{ cat }}{% endcapture %}
   {% endunless %}
 {% endfor %}
 
