@@ -24,5 +24,7 @@ The crop widget is shown as a red box in the 2D viewers. This can be adjusted in
 
 Currently, data layers should not have more than 4096 pixels in a single dimension, as data layers are not rendered as bricks but as a single texture.  
 
+{% capture image %}{% include imageurl.md %}{% endcapture %}
+![alt text]({{image}} {{page.title}} )
 {% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}
