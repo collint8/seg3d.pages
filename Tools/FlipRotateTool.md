@@ -1,5 +1,5 @@
 ---
-title: Flip/Rotate
+title: FlipRotate
 category: ToolDocs
 tool: Tools
 ---
