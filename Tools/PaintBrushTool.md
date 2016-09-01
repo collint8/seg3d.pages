@@ -39,5 +39,7 @@ List of keyboard and mouse actions in the for the Paint Brush Tool
 | F               | paint flood fill             |
 | E               | erase flood fill             | 
 
+![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)
+
 {% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}

@@ -30,5 +30,7 @@ List of keyboard and mouse actions in the for the threshold tool
 | :----: | ------------------------------------- |
 | M      | toggle visibility of the preview mask |
 
+![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)
+
 {% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}

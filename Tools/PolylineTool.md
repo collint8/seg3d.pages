@@ -1,5 +1,5 @@
 ---
-title: PolyLine
+title: Polyline
 category: ToolDocs 
 tool: tools
 ---
@@ -33,6 +33,8 @@ Table. List of keyboard and mouse actions in the for the Polyline Tool
 | E                    | Erase flood fill                     |
 
 Once the desired region is designated by the polyline, the user can fill the area or delete the mask data in the area. This tools then is like the paint brush tool, where the brush can be shaped in any way. The polyline will remain as the slice changes, so that the user can modify the existing polyline instead of creating a new one. If desired, a new polyline can be created by clearing the polyline and starting fresh.
+
+![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)
 
 {% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}

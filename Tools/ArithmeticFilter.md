@@ -24,8 +24,7 @@ Any operation can be performed on either type of data, but it should be noted th
 
 This filter also enables outputs of both data and mask layers. The filter will switch the output the match the input if the input is changed, but it can be changed afterward. If there are multiple values in the mathematical result, but mask layer output is chosen, the filter will perform a threshold to try and capture the relevant data in a mask, usually capturing values over zero in the data.
 
-{% capture image %}{% include imageurl.md %}{% endcapture %}
-![alt text]({{ image }})
+![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)
 
 {% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
