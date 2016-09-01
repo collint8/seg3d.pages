@@ -1,5 +1,5 @@
 ---
-title: Copy/Paste
+title: CopyPaste
 category: ToolDocs
 tool: Tools
 ---
