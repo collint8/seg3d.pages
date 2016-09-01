@@ -1,7 +1,7 @@
 ---
 title: Threshold
 category: ToolDocs 
-tool: tools
+tool: Tools
 ---
 
 # {{ page.title }} 

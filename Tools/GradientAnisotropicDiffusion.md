@@ -1,5 +1,5 @@
 ---
-title: <>
+title: GradientAnisotropicDiffusion 
 category: ToolDocs 
 tool: AdvancedFilters
 ---

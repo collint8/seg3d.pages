@@ -1,7 +1,7 @@
 ---
 title: SpeedlineTool
 category: ToolDocs 
-tool: tools
+tool: Tools
 ---
 
 # {{ page.title }} 

@@ -1,7 +1,7 @@
 ---
 title: SelectPoints
 category: ToolDocs 
-tool: tools
+tool: Tools
 ---
 
 # {{ page.title }} 
