@@ -26,8 +26,8 @@ The paste option is a little more complicated, as the user must specify the slic
 
 This tool will modify the original layer without an option to create a new layer with the action. 
 
-{% capture image % }{% include imageurl.md %}{% endcapture %}
-{{ image }}
+{% capture image %}{% include imageurl.md %}{% endcapture %}
+![alt text]({{ image }})
 
-{% capture url % }{% include url.md %}{% endcapture %}
+{% capture url %}{% include url.md %}{% endcapture %}
 {{ url }}

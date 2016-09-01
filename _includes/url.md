@@ -2,5 +2,5 @@
 ---
 [Top](#top)
 {% else %}
-[Home](../tools.md)
+[Home](../tools.html)
 {% endif%}
