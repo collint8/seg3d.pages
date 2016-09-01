@@ -22,5 +22,5 @@ The mask data filter will use the second input of a mask layer to selectively di
 
 ![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)
 
-{% capture image %}{% include imageurl.md %}{% endcapture %}
-{{image}}
+{% capture url %}{% include url.md%}{% endcapture %}
+{{ url }}
