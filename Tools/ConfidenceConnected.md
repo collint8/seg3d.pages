@@ -14,7 +14,7 @@ tool: AdvancedFilters
 
 ### Summary
 
-This filter will produce a mask of pixels statistically similar to pixels surrounding defined seed points
+This filter will produce a mask of pixels statistically similar to pixels surrounding defined seed points.
 
 ### Detailed Description
 
