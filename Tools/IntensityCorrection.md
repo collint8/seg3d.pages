@@ -20,7 +20,7 @@ This filter attempts to make a homogeneous intensity over the data layer.
 
 The intensity correction filter attempts to make the intensity over the data layer homogenous. This is very useful when dealing with MR images, as the intensity values and contrast can vary over space due to magnetic field variations. This filter will attempt to fit a spline to average intensity of the image, then to use that spline to equalize the intensity values over the space.
 
-There are two parameters in this filter, * polynomial order* and *edge sensitivity.*
+There are two parameters in this filter, *polynomial order* and *edge sensitivity.*
 
 The *polynomial order* parameter controls the kind of line used to correct the image. A polynomial order of 1 assumes that any changes in intensity is linear through the image. A higher polynomial order may be needed if there are more complex patterns of intensity variation, such as seemingly isolated regions of high or low intensities.
 
