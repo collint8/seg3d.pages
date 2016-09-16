@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Arithmetic
 category: ToolDocs 
 tool: DataFilters 

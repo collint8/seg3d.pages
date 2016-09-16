@@ -1,4 +1,5 @@
 ---
+layout: default
 title: CurvatureAnisotropicDiffusion
 category: ToolDocs 
 tool: AdvancedFilters

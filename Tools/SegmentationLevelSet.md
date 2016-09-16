@@ -1,4 +1,5 @@
 ---
+layout: default
 title: SegmentationLevelSet
 category: ToolDocs 
 tool: AdvancedFilters

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: SmoothBinaryDilateErode
 category: ToolDocs 
 tool: MaskFilters 

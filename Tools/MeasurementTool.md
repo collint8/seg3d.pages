@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Measure
 category: ToolDocs 
 tool: Tools
@@ -26,7 +27,7 @@ Back in the general tab, the active layer can be deleted and the opacity of the 
 List of keyboard and mouse actions in the for the Measure Tool
 
 | Action              | Function      |
-| :-----------------: | :-----------: |
+| :------------------ | :------------ |
 | ctrl/cmd            | snap to axis  |
 | middle mouse button | snap to slice |
 

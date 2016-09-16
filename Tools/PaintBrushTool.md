@@ -1,4 +1,5 @@
 ---
+layout: default
 title: PaintBrush
 category: ToolDocs 
 tool: Tools

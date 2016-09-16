@@ -1,4 +1,5 @@
 ---
+layout: default
 title: PointSetRegister
 category: ToolDocs 
 tool: Tools

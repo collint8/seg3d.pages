@@ -1,4 +1,5 @@
 ---
+layout: default
 title: FlipRotate
 category: ToolDocs
 tool: Tools

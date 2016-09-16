@@ -1,4 +1,5 @@
 ---
+layout: default
 title: FillHoles
 category: ToolDocs 
 tool: MaskFilters 

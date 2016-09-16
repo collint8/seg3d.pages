@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Median
 category: ToolDocs 
 tool: DataFilters 

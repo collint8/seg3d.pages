@@ -1,4 +1,5 @@
 ---
+layout: default
 title: GradientAnisotropicDiffusion 
 category: ToolDocs 
 tool: AdvancedFilters

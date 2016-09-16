@@ -1,4 +1,5 @@
 ---
+layout: default
 title: ConnectedComponentSize
 category: ToolDocs 
 tool: MaskFilters 

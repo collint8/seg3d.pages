@@ -1,4 +1,5 @@
 ---
+layout: default
 title: BooleanRemove
 category: ToolDocs 
 tool: MaskFilters

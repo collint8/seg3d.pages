@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Resample
 category: ToolDocs 
 tool: Tools

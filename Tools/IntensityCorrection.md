@@ -1,4 +1,5 @@
 ---
+layout: default
 title: IntensityCorrection
 category: ToolDocs 
 tool: AdvancedFilters

@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Seg3d Tool Documentation
 category: info 
 ---

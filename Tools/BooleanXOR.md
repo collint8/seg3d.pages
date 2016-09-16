@@ -1,4 +1,5 @@
 ---
+layout default
 title: BooleanXOR
 category: ToolDocs 
 tool: MaskFilters 

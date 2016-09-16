@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Threshold
 category: ToolDocs 
 tool: Tools

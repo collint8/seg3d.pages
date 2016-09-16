@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Pad
 category: ToolDocs 
 tool: Tools

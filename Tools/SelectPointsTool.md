@@ -1,4 +1,5 @@
 ---
+layout: default
 title: SelectPoints
 category: ToolDocs 
 tool: Tools

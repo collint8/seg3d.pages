@@ -1,4 +1,5 @@
 ---
+layout: default
 title: CannyEdge
 category: ToolDocs 
 tool: AdvancedFilters

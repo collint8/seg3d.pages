@@ -1,4 +1,5 @@
 ---
+layout: default
 title: ExtractDataLayers
 category: ToolDocs 
 tool: LargeVolumeTools

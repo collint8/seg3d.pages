@@ -1,4 +1,5 @@
 ---
+layout: default
 title: BooleanOR
 category: ToolDocs 
 tool: MaskFilters

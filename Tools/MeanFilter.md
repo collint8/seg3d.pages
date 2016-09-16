@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Mean
 category: ToolDocs 
 tool: DataFilters 
@@ -14,7 +15,7 @@ tool: DataFilters
 
 ### Summary
 
-This filter performs smoothing on the data layer using a step function
+This filter performs smoothing on the data layer using a step function.
 
 ### Detailed Description
 

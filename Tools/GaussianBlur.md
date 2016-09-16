@@ -1,4 +1,5 @@
 ---
+layout: default
 title: GaussianBlur
 category: ToolDocs 
 tool: DataFilters 

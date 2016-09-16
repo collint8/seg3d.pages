@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Polyline
 category: ToolDocs 
 tool: Tools
@@ -25,7 +26,7 @@ The polyline is created by clicking with the **left mouse** on the 2D viewer. Th
 Table. List of keyboard and mouse actions in the for the Polyline Tool
 
 | Action               | Function                             |
-| :------------------: | ------------------------------------ |
+| :------------------- | ------------------------------------ |
 | left mouse           | add or move point                    |
 | right mouse          | erase point                          |
 | shift+left mouse     | move polyline (on one of the points) |

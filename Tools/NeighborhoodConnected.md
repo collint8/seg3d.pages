@@ -1,4 +1,5 @@
 ---
+layout: default
 title: NeighborhoodConnected
 category: ToolDocs 
 tool: DataFilters 

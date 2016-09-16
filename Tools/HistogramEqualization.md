@@ -1,4 +1,5 @@
 ---
+layout: default
 title: HistogramEqualization
 category: ToolDocs 
 tool: AdvancedFilters

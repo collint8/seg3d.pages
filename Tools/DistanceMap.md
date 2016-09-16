@@ -1,4 +1,5 @@
 ---
+layout: default
 title: DistanceMap
 category: ToolDocs 
 tool: AdvancedFilters
@@ -14,7 +15,7 @@ tool: AdvancedFilters
 
 ### Summary
 
-This filter will calculate the distance to the surface of the mask from within the volume
+This filter will calculate the distance to the surface of the mask from within the volume.
 
 ### Detailed Description
 
