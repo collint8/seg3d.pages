@@ -1,4 +1,5 @@
 ---
+layout: default
 title: FastBinaryDilateErode
 category: ToolDocs 
 tool: MaskFilters 

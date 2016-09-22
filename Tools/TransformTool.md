@@ -15,7 +15,7 @@ tool: Tools
 
 ### Summary
 
-This tool cane be used to translate and scale one or more layers. 
+This tool can be used to translate and scale one or more layers. 
 
 ### Detailed Description
 
