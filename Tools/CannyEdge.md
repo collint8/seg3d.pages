@@ -21,8 +21,7 @@ This filter will output the pixels that are edges in a mask layer.
 
 The Canny edge filter computes the edges in a data layer using a Canny Edge Detection Filter (Canny, J. F. A computational approach to edge detection, IEEE PAMI 8(6), 679-698, November 1986). This filter will output the pixels that are edges in a mask layer.
 
-*This filter is composed of four steps:*
-
+This filter is composed of four steps:
 1. Smooth the input image with Gaussian filter.
 2. calculate the second directional derivatives of the smoothed image.
 3. Non-Maximum Suppression: the zero-crossings of the 2nd derivative are found, and the sign of the third derivative is used to find the correct extrema.

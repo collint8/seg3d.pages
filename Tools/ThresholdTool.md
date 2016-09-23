@@ -25,7 +25,7 @@ The threshold range can be set in two ways: the slider provided in the tool wind
 
 Using the threshold tool can provide a very good rough segmentation of the region of interest, but may require some editing. The paint brush and polyline tools are manual ways to remove excess regions in the mask, but the user should also try other mask filters such as connected component and connected component size (and another threshold) to remove stray regions of selected noise.
 
-List of keyboard and mouse actions in the for the threshold tool
+Table: List of keyboard and mouse actions in the for the threshold tool
 
 | Action | Function                              | 
 | :----: | ------------------------------------- |

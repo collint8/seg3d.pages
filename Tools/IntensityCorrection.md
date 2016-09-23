@@ -23,9 +23,9 @@ The intensity correction filter attempts to make the intensity over the data lay
 
 There are two parameters in this filter, *polynomial order* and *edge sensitivity.*
 
-The *polynomial order* parameter controls the kind of line used to correct the image. A polynomial order of 1 assumes that any changes in intensity is linear through the image. A higher polynomial order may be needed if there are more complex patterns of intensity variation, such as seemingly isolated regions of high or low intensities.
+The *polynomial order* parameter controls the kind of line used to correct the image. A *polynomial order* of 1 assumes that any changes in intensity is linear through the image. A higher *polynomial order* may be needed if there are more complex patterns of intensity variation, such as seemingly isolated regions of high or low intensities.
 
-The *edge sensitivity* parameter controls the correction algorithm that prevents artifacts do to edges in the image. The higher the sensitivity, the less the algorithm will correct for edge artifacts. As edge sensitivity approaches 0, the algorithm attempts to leave edges unchanged and may suppress the intensity correction altogether.
+The *edge sensitivity* parameter controls the correction algorithm that prevents artifacts do to edges in the image. The higher the sensitivity, the less the algorithm will correct for edge artifacts. As *edge sensitivity* approaches 0, the algorithm attempts to leave edges unchanged and may suppress the intensity correction altogether.
 
 ![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)
 
