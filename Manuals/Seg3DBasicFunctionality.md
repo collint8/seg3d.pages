@@ -8,122 +8,122 @@ Contents
 ========
 
 [1 Overview](#overview)   
-[1.1 About Seg3D](#about-seg3d)  
-[1.2 Software Requirements](#software-requirements)  
-[1.2.1 Seg3d](#seg3d)  
+..[1.1 About Seg3D](#about-seg3d)  
+..[1.2 Software Requirements](#software-requirements)  
+....[1.2.1 Seg3d](#seg3d)  
 [2 Welcome Screen](#welcome-screen)  
-[2.1 Load Recent Project](#load-recent-project)  
-[2.2 Open Existing Project](#open-existing-project)  
-[2.3 Start New Project](#start-new-project)  
-[2.4 Quick Open File](#quick-open-file)  
-[2.5 Quit](#quit)  
+..[2.1 Load Recent Project](#load-recent-project)  
+..[2.2 Open Existing Project](#open-existing-project)  
+..[2.3 Start New Project](#start-new-project)  
+..[2.4 Quick Open File](#quick-open-file)  
+..[2.5 Quit](#quit)  
 [3 Seg3D Viewer](#seg3d-viewer)  
-[3.1 Controlling Windows](#controlling-windows)  
-[3.2 Viewer Panels](#viewer-panels)  
-[3.2.1 2D Slice Viewer](#2d-slice-viewer)  
-[3.2.2 3D Volume Viewer](#3d-volume-viewer)  
-[3.3 Tool Bar](#tool-bar)  
-[3.4 Viewing Options](#viewing-options)  
-[3.4.1 Full Screen](#full-screen)  
-[3.4.2 One Viewer](#one-viewer)  
-[3.4.3 One and One](#one-and-one)  
-[3.4.4 One and Two](#one-and-two)  
-[3.4.5 One and Three](#one-and-three)  
-[3.4.6 Two and Two](#two-and-two)  
-[3.4.7 Two and Three](#two-and-three)  
-[3.4.8 Three and Three](#three-and-three)  
-[3.4.9 Table of Shortcuts](#table-of-shortcuts)  
+..[3.1 Controlling Windows](#controlling-windows)  
+..[3.2 Viewer Panels](#viewer-panels)  
+....[3.2.1 2D Slice Viewer](#2d-slice-viewer)  
+....[3.2.2 3D Volume Viewer](#3d-volume-viewer)  
+..[3.3 Tool Bar](#tool-bar)  
+..[3.4 Viewing Options](#viewing-options)  
+....[3.4.1 Full Screen](#full-screen)  
+....[3.4.2 One Viewer](#one-viewer)  
+....[3.4.3 One and One](#one-and-one)  
+....[3.4.4 One and Two](#one-and-two)  
+....[3.4.5 One and Three](#one-and-three)  
+....[3.4.6 Two and Two](#two-and-two)  
+....[3.4.7 Two and Three](#two-and-three)  
+....[3.4.8 Three and Three](#three-and-three)  
+....[3.4.9 Table of Shortcuts](#table-of-shortcuts)  
 [4 Seg3D Windows](#seg3d-windows)  
-[4.1 Project Window](#project-window)  
-[4.2 Tools Window](#tools-window)  
-[4.3 Layer Manager Window](#layer-manager-window)  
-[4.4 Volume View Window](#volume-view-window)  
-[4.4.1 Fog Panel](#fog-panel)  
-[4.4.2 Clipping Planes Panel](#clipping-planes-panel)  
-[4.4.3 Volume Rendering Panel](#volume-rendering-panel)  
-[4.4.4 Rendering Options](#rendering-options)  
-[4.4.5 Transfer Function](#transfer-function)  
-[4.5 Provenance Window](#provenance-window)  
-[4.6 Controller Window](#controller-window)  
-[4.6.1 Actions Tab](#actions-tab)  
-[4.6.2 State Variables Tab](#state-variables-tab)  
-[4.6.3 Event Log Tab](#event-log-tab)  
-[4.6.4 Undo/Redo Buffer Tab](#undoredo-buffer-tab)  
-[4.7 Python Console](#python-console)  
-[4.8 Message History Window](#message-history-window)  
+..[4.1 Project Window](#project-window)  
+..[4.2 Tools Window](#tools-window)  
+..[4.3 Layer Manager Window](#layer-manager-window)  
+..[4.4 Volume View Window](#volume-view-window)  
+....[4.4.1 Fog Panel](#fog-panel)  
+....[4.4.2 Clipping Planes Panel](#clipping-planes-panel)  
+....[4.4.3 Volume Rendering Panel](#volume-rendering-panel)  
+....[4.4.4 Rendering Options](#rendering-options)  
+....[4.4.5 Transfer Function](#transfer-function)  
+..[4.5 Provenance Window](#provenance-window)  
+..[4.6 Controller Window](#controller-window)  
+....[4.6.1 Actions Tab](#actions-tab)  
+....[4.6.2 State Variables Tab](#state-variables-tab)  
+...[4.6.3 Event Log Tab](#event-log-tab)  
+....[4.6.4 Undo/Redo Buffer Tab](#undoredo-buffer-tab)  
+..[4.7 Python Console](#python-console)  
+..[4.8 Message History Window](#message-history-window)  
 [5 Basic Program Functions](#basic-program-functions)  
-[5.1 File](#file)  
-[5.1.1 New Project](#new-project)  
-[5.1.2 Open Project](#open-project)  
-[5.1.3 Show Project Folder](#show-project-folder)  
-[5.1.4 Save Project](#save-project)  
-[5.1.5 Save Project As](#save-project-as)  
-[5.1.6 Launch Another Copy of Seg3D](#launch-another-copy-of-seg3d)  
-[5.1.7 Import Layer From Single File](#import-layer-from-single-file)  
-[5.1.8 Import Layer From Image Series](#import-layer-from-image-series)  
-[5.1.9 Export Segmentation](#export-segmentation)  
-[5.1.10 Export Active Data Layer](#export-active-data-layer)  
-[5.1.11 Recent Projects](#recent-projects)  
-[5.2 Edit](#edit)  
-[5.2.1 Undo](#undo)  
-[5.2.2 Redo](#redo)  
-[5.2.3 Copy Mask Slice](#copy-mask-slice)  
-[5.2.4 Paste Mask Slice](#paste-mask-slice)  
-[5.2.5 Punch Through Volume](#punch-through-volume)  
-[5.3 Help](#help)  
-[5.3.1 Search](#search)  
-[5.3.2 Keyboard Shortcuts](#keyboard-shortcuts)  
-[5.4 Preferences](#preferences)  
-[5.4.1 General](#general)  
-[5.4.2 View](#view)  
-[5.4.3 Layers](#layers)  
-[5.4.4 Sidebars/Tools + Filters](#sidebarstools-filters)  
+..[5.1 File](#file)  
+....[5.1.1 New Project](#new-project)  
+....[5.1.2 Open Project](#open-project)  
+....[5.1.3 Show Project Folder](#show-project-folder)  
+....[5.1.4 Save Project](#save-project)  
+....[5.1.5 Save Project As](#save-project-as)  
+....[5.1.6 Launch Another Copy of Seg3D](#launch-another-copy-of-seg3d)  
+....[5.1.7 Import Layer From Single File](#import-layer-from-single-file)  
+....[5.1.8 Import Layer From Image Series](#import-layer-from-image-series)  
+....[5.1.9 Export Segmentation](#export-segmentation)  
+....[5.1.10 Export Active Data Layer](#export-active-data-layer)  
+....[5.1.11 Recent Projects](#recent-projects)  
+..[5.2 Edit](#edit)  
+....[5.2.1 Undo](#undo)  
+....[5.2.2 Redo](#redo)  
+....[5.2.3 Copy Mask Slice](#copy-mask-slice)  
+....[5.2.4 Paste Mask Slice](#paste-mask-slice)  
+....[5.2.5 Punch Through Volume](#punch-through-volume)  
+..[5.3 Help](#help)  
+....[5.3.1 Search](#search)  
+....[5.3.2 Keyboard Shortcuts](#keyboard-shortcuts)  
+..[5.4 Preferences](#preferences)  
+....[5.4.1 General](#general)  
+....[5.4.2 View](#view)  
+....[5.4.3 Layers](#layers)  
+....[5.4.4 Sidebars/Tools + Filters](#sidebarstools-filters)  
 [6 Tools & Filters](#tools-filters)  
-[6.1 Tools](#tools)  
-[6.1.1 Copy/Paste](#copypaste)  
-[6.1.2 Crop](#crop)  
-[6.1.3 Flip/Rotate](#fliprotate)  
-[6.1.4 Invert](#invert)  
-[6.1.5 Measure](#measure)  
-[6.1.6 Paint Brush](#paint-brush)  
-[6.1.7 Select Points](#select-points)  
-[6.1.8 Pad](#pad)  
-[6.1.9 Point Set Registration](#point-set-registration)  
-[6.1.10 Polyline](#polyline)  
-[6.1.11 Resample](#resample)  
-[6.1.12 Speedline](#speedline)  
-[6.1.13 Threshold](#threshold)  
-[6.1.14 Transform](#transform)  
-[6.2 Mask Filters](#mask-filters)  
-[6.2.1 Boolean AND](#boolean-and)  
-[6.2.2 Boolean OR](#boolean-or)  
-[6.2.3 Boolean REMOVE](#boolean-remove)  
-[6.2.4 Boolean XOR](#boolean-xor)  
-[6.2.5 Connected Component](#connected-component)  
-[6.2.6 Connected Component Size](#connected-component-size)  
-[6.2.7 Fast Binary Dilate->Erode](#fast-binary-dilate-erode)  
-[6.2.8 Fill Holes](#fill-holes)  
-[6.2.9 Smooth Binary Dilate->Erode](#smooth-binary-dilate-erode)  
-[6.3 Large Volume Tools](#large-volume-tools)  
-[6.3.1 Extract Data Layer](#extract-data-layer)  
-[6.4 Data Filters](#data-filters)  
-[6.4.1 Arithmetic](#arithmetic)  
-[6.4.2 Gaussian Blur](#gaussian-blur)  
-[6.4.3 Mask Data](#mask-data)  
-[6.4.4 Mean](#mean)  
-[6.4.5 Median](#median)  
-[6.4.6 Neighborhood Connected](#neighborhood-connected)  
-[6.4.7 Otsu Threshold](#otsu-threshold)  
-[6.5 Advanced Filters](#advanced-filters)  
-[6.5.1 Canny Edge](#canny-edge)  
-[6.5.2 Confidence Connected](#confidence-connected)  
-[6.5.3 Curvature Anisotropic Diffusion](#curvature-anisotropic-diffusion)  
-[6.5.4 Distance Map](#distance-map)  
-[6.5.5 Gradient Anisotropic Diffusion](#gradient-anisotropic-diffusion)  
-[6.5.6 Gradient Magnitude](#gradient-magnitude)  
-[6.5.7 Histogram Equalization](#histogram-equalization)  
-[6.5.8 Intensity Correction](#intensity-correction)  
-[6.5.9 Segmentation Level Set](#segmentation-level-set)  
+..[6.1 Tools](#tools)  
+....[6.1.1 Copy/Paste](#copypaste)  
+....[6.1.2 Crop](#crop)  
+....[6.1.3 Flip/Rotate](#fliprotate)  
+....[6.1.4 Invert](#invert)  
+....[6.1.5 Measure](#measure)  
+....[6.1.6 Paint Brush](#paint-brush)  
+....[6.1.7 Select Points](#select-points)  
+....[6.1.8 Pad](#pad)  
+....[6.1.9 Point Set Registration](#point-set-registration)  
+....[6.1.10 Polyline](#polyline)  
+....[6.1.11 Resample](#resample)  
+....[6.1.12 Speedline](#speedline)  
+....[6.1.13 Threshold](#threshold)  
+....[6.1.14 Transform](#transform)  
+..[6.2 Mask Filters](#mask-filters)  
+....[6.2.1 Boolean AND](#boolean-and)  
+....[6.2.2 Boolean OR](#boolean-or)  
+....[6.2.3 Boolean REMOVE](#boolean-remove)  
+....[6.2.4 Boolean XOR](#boolean-xor)  
+....[6.2.5 Connected Component](#connected-component)  
+....[6.2.6 Connected Component Size](#connected-component-size)  
+....[6.2.7 Fast Binary Dilate->Erode](#fast-binary-dilate-erode)  
+....[6.2.8 Fill Holes](#fill-holes)  
+....[6.2.9 Smooth Binary Dilate->Erode](#smooth-binary-dilate-erode)  
+..[6.3 Large Volume Tools](#large-volume-tools)  
+....[6.3.1 Extract Data Layer](#extract-data-layer)  
+..[6.4 Data Filters](#data-filters)  
+....[6.4.1 Arithmetic](#arithmetic)  
+....[6.4.2 Gaussian Blur](#gaussian-blur)  
+....[6.4.3 Mask Data](#mask-data)  
+....[6.4.4 Mean](#mean)  
+....[6.4.5 Median](#median)  
+....[6.4.6 Neighborhood Connected](#neighborhood-connected)  
+....[6.4.7 Otsu Threshold](#otsu-threshold)  
+..[6.5 Advanced Filters](#advanced-filters)  
+....[6.5.1 Canny Edge](#canny-edge)  
+....[6.5.2 Confidence Connected](#confidence-connected)  
+....[6.5.3 Curvature Anisotropic Diffusion](#curvature-anisotropic-diffusion)  
+....[6.5.4 Distance Map](#distance-map)  
+....[6.5.5 Gradient Anisotropic Diffusion](#gradient-anisotropic-diffusion)  
+....[6.5.6 Gradient Magnitude](#gradient-magnitude)  
+....[6.5.7 Histogram Equalization](#histogram-equalization)  
+....[6.5.8 Intensity Correction](#intensity-correction)  
+....[6.5.9 Segmentation Level Set](#segmentation-level-set)  
 
 
 Overview
@@ -135,6 +135,11 @@ Note: If you are looking for a refresher on the available keyboard and mouse sho
 
 About Seg3D
 -----------
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/layout.png" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 Seg3D is a lightweight software tool developed for use in visualizing and segmenting image data. The core intended use of Seg3D involves loading 3D scalar data, such as MRI or CT scans, and generating labels mask to identify various regions of interest in the original image data. Seg3D facilitates the process using interactive tools such as image processing filters and manual masking techniques.
 
@@ -153,6 +158,11 @@ Welcome Screen
 ==============
 
 Anytime you start Seg3D, users are first presented with the Seg3D welcome screen. As seen in <a href="#welcome">Figure 2.1</a>, the welcome screen consists of the Seg3D splash screen and a menu displaying the available options for starting and continuing a segmentation in Seg3D. The included options are to load a recent project, open existing project, start a new project, quickly open a file for viewing, and to quit Seg3D. These options are the same as some of the options in the **File** menu which are explained in this chapter as well as Sec. \[sec:file\].
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/welcome_screen.png" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 Load Recent Project
 -------------------
@@ -185,12 +195,17 @@ Seg3D Viewer
 
 The Seg3D viewer is the main interface between the users and the software. This viewer is meant to be highly interactive and intuitive. Using a combination of mouse functions, keyboard shortcuts, and visual buttons the users can quickly visualize and segment data. This chapter will describe the functionality of several aspects of the Seg3D viewer including the overall layout of the interface, 2D slice viewer, 3D volume viewer, and the various viewing options available.
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/layout_blank.pdf" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 The default layout when Seg3D is opened and a new project is created is shown in Figure \[fig:blank\]. As seen from the image the interface for Seg3D consists of a number of viewers (both 2D and 3D), windows to control the functionality of Seg3D, and a tool bar at the bottom of the screen.
 
 Controlling Windows
 -------------------
 
-The windows on docked the side of the screen can be any of five windows explained in Chapter \[sec:windows\] (Project, Tools, Layer Manager, Volume Viewer, and Provenance windows). Each of these widows can be closed by pressing on the close button and opened by choosing the window from the **Window** menu or using hot key. When opened, the window will appear in the last location used, or the default if never opened. The windows can also be detached from the side (by pressing the detach button and reattached to the side by moving the window close to the side of the Seg3D window, or by double clicking on the window header. Any detached window can be moved by clicking and dragging on the window header and resized by clicking and dragging on the corner of the window. Attached windows can also be resized by clicking and dragging on border between it and the viewing panels, but are more limited in the changes allowed.
+The windows on docked the side of the screen can be any of five windows explained in Chapter \[sec:windows\] (Project, Tools, Layer Manager, Volume Viewer, and Provenance windows). Each of these widows can be closed by pressing on the close button [!alt text](Seg3DBasicFunctionality_figures/close_window.png) and opened by choosing the window from the **Window** menu or using hot key. When opened, the window will appear in the last location used, or the default if never opened. The windows can also be detached from the side (by pressing the detach button [!alt text](Seg3DBasicFunctionality_figures/dock.png) and reattached to the side by moving the window close to the side of the Seg3D window, or by double clicking on the window header. Any detached window can be moved by clicking and dragging on the window header and resized by clicking and dragging on the corner of the window. Attached windows can also be resized by clicking and dragging on border between it and the viewing panels, but are more limited in the changes allowed.
 
 Viewer Panels
 -------------
@@ -231,28 +246,17 @@ Tables \[tab:2dmouse\] & \[tab:2dkey\] show the mouse and keyboard actions wh
 
 \[tab:2dicons\]
 
-| <span>**Icon**</span> | <span>**Function**</span>                                                        |
-|:----------------------|:---------------------------------------------------------------------------------|
-|                       | Autoview Icon: This icon forces the panel to fit the objects in viewer with      |
-|                       | maximum size.                                                                    |
-|                       | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L).    |
-|                       | Any changes to any locked viewers will change all the views. Viewers must        |
-|                       | be the same type and each must be locked to use this funtion.                    |
-|                       | Visibility Icon: This icon toggles the visibility of the plane in the 3D volume  |
-|                       | viewer.                                                                          |
-|                       | Picking Icon: This icon toggles the ability of other planes to pick the slice to |
-|                       | view in the panel. Only one viewer can have this option enabled. if only on      |
-|                       | of a type of plane, this cannot be disabled.                                     |
-|                       | Grid Icon: This icon toggles the visibility of the grid in the viewer.           |
-|                       |                                                                                  |
-|                       | Flip Horizontal Icon: This icon will horizontally flip the visualization         |
-|                       | of the slices in the viewer.                                                     |
-|                       | Flip Vertical Icon: This icon will vertically flip the visualization of          |
-|                       | the slices in the viewer.                                                        |
-|                       | Overlay Icon: This icon will toggle the visibility of the overlay on             |
-|                       | the viewer. This will allow unobstructed viewing of the slices.                  |
-|                       | Picking Lines Icon: This icon toggles the visibility of the picking              |
-|                       | lines (shows other slices) in the viewing panel.                                 |
+| <span>**Icon**</span>                                          | <span>**Function**</span>                                                        |
+|:---------------------------------------------------------------|:---------------------------------------------------------------------------------|
+|[!alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)    | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
+|[!alt text](Seg3DBasicFunctionality_figures/LockOFF.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
+|[!alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)     | Visibility Icon: This icon toggles the visibility of the plane in the 3D volume viewer.|
+|[!alt text](Seg3DBasicFunctionality_figures/PickingOff)         | Picking Icon: This icon toggles the ability of other planes to pick the slice to view in the panel. Only one viewer can have this option enabled. If there is only one type of plane, this cannot be disabled.|
+|[!alt text](Seg3DBasicFunctionality_figures/GridOff.png)        | Grid Icon: This icon toggles the visibility of the grid in the viewer.           |
+|[!alt text](Seg3DBasicFunctionality_figures/FlipHorizOff.png)   | Flip Horizontal Icon: This icon will horizontally flip the visualization of the slices in the viewer.|
+|[!alt text](Seg3DBasicFunctionality_figures/FlipVertOff.png)    | Flip Vertical Icon: This icon will vertically flip the visualization of the slices in the viewer.|
+|[!alt text](Seg3DBasicFunctionality_figures/OverlayOff.png)     | Overlay Icon: This icon will toggle the visibility of the overlay on the viewer. This will allow unobstructed viewing of the slices.|
+|[!alt text](Seg3DBasicFunctionality_figures/PickingLinesOff.png)| Picking Lines Icon: This icon toggles the visibility of the picking lines (shows other slices) in the viewing panel.|
 
 ### 3D Volume Viewer
 
@@ -331,7 +335,17 @@ The tool bar located at the bottom of the Seg3D window contains some useful func
 
 The information toolbar will show information about the volume at the location indicated by the mouse. As shown in Figure \[fig:geometricinfo\], the information given is the x, y, and z coordinates and the value of the layer at the mouse position in the selected volume. By clicking on the world icon (Table \[tab:toolbaricons\]), you may toggle between indexed values (relative) and the world values (absolute, considers spacing). The data shown is changed when the mouse is moved, the active slice is changed, or the active layer is changed.
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 By clicking on the switch tool icon (Table \[tab:toolbaricons\]), the tool bar will display a quick menu for the available tools and layers instead of geometric information. As seen in Table \[tab:toolbaricons\], this menu will display the active tool and layer. If the either is clicked, a dropped down menu will appear allowing the user to switch to an open tool or layer. This can be especially useful in full screen mode.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 Viewing Options
 ---------------
@@ -393,6 +407,11 @@ In addition to the viewer windows discussed in the above chapter, there are seve
 Project Window
 --------------
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 The project window is one of three windows that is opened by default when Seg3D launches. It is located on the left side of the panel and is secondary to the default ’Tools Window’ which is also located on the left but appears over top of the project window. In order to access the window, simply click the tab at the bottom of the left side named ’Current Project’ (See Figure \[fig:ProjectWindow\]) or go to the ’Window’ drop down menu, de-select ’Project Window’ and reselect it.
 
 Now you come to the ’Current Project’ window. The window is divided into two panes. At the top of the window is the Project Settings pane. The name of the current project is listed. Below this is the option to ’Save custom colors in project.’ This option allows the user to keep the defined colors assigned to specific label masks within the project. Below this is an ’Autosave’ option. Seg3D autosaves sessions every 10 minutes by default. The default time between autosaves can be changed in the general Seg3D preferences.
@@ -404,6 +423,11 @@ At any time the user can export the session to a new location - with or without 
 Tools Window
 ------------
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 The tools window is another of the three windows that is opened upon Seg3D launch. This window is also on the left of the Seg3D panel and is, unlike the project window, is displayed when Seg3D is opened. Users can toggle between project and tool windows by selecting the specific tabs at the bottom of the left most window pane.
 
 The tool window houses the current tools that the user has selected from the ’Tools’ drop down menu. The active tool will be highlighted in orange and will be displayed. Inactive tools, that have been opened during the session, will be grayed out and minimized. To access one of the other tools, click one of the grayed out items or select it from the ’Tools’ drop down menu. In Figure \[fig:ToolWindow\] the ’Paint Brush’ tool is active, while the ’Threshold,’ ’Crop,’ and ’Measure’ tools are inactive.
@@ -412,6 +436,11 @@ Layer Manager Window
 --------------------
 
 The layer manager window is the last of the three windows that open by default upon launching Seg3D. This window is positioned to the right side of the Seg3D window pane and contains all of the mask and volume files involved with the session. If a file is not selected when Seg3D launches, this window will be blank, otherwise it will contain the volume and mask surface files associated with the opened file.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 The layer manager window is the last of the three windows that open by default upon launching Seg3D. This window is positioned to the right side of the Seg3D window pane and contains all of the mask and volume files involved with the session. If a file is not selected when Seg3D launches, this window will be blank, otherwise it will contain the volume and mask surface files associated with the opened file.
 
@@ -493,10 +522,20 @@ The Volume View Window is not opened by default when Seg3D is opened. To open th
 The Fog Panel allows the user to control the fog density. In order to observe the effects of fog, the user must activate the Show fog icon on the bottom of the 3D viewer window. Once active, a fog will be observed on the image. The depth of the fog is determined by the distance that the 3-dimensional component is away from the viewer. In Figure \[fig:FogPanel\] the pelvis is tilted away from the viewer. It is therefore farther from the viewer and has more fog effect applied to it.
 
 Fog density can be tuned by using the slider in the the Volume View Window. By default the density value is 1.00. If the fog density increases, the fogging effect increases.
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 
 ### Clipping Planes Panel
 
 The Clipping Planes Panel allows users to define multiple clipping planes with which to clip the volume. + and - signs at the top of the panel represent individual clipping planes. The + sign is an enabled clipping plan, while the - sign is disabled. The clipping panel option in the viewer window is activated by default.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 Once an clipping plane has been selected, it must be enabled. Click the ’Enable’ checkbox. After the plane is enabled, the user is able to define the influence of each cardinal direction on the plane. The number 1 in a box indicates that the clipping plane will slice a 45-degree angle within the positive side of that cardinal direction on the 3d viewing window. A -1 will clip a -45-degree angle from the negative side.
 
@@ -506,11 +545,21 @@ The final option in the Clipping Planes panel is the option to ’Reverse Normal
 
 ### Volume Rendering Panel
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 The volume rendering panel allows users to generate a volume directly from the volume file, based on the application of transfer functions. These volume representations are created by extracting values from the transfer functions available and displaying them on a slice-by-slice basis. If the user zooms the image in closely, each individual slice can be seen (Figure \[fig:VolRendOpt\]). The user must define the volume over which they would like to perform the volume rendering. The user must also make sure that the ’show volume rendering’ option is selected at the bottom of the 3D viewer window.
 
 ### Rendering options
 
 With these two options selected, the user now has three rendering options. These options are Simple, Faux Shading, and Ambient Occlusion.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 #### Simple
 
@@ -539,6 +588,11 @@ The Provenance Window is not opened by default when Seg3D is opened. To open the
 
 The Provenance Window shows the history of the active layer. In order to see which actions lead to the current layer, highlight the layer in the ’Layer Window’ on the left of the Seg3D display. Initially, nothing will appear in the Provenance window. Click the Refresh button at the bottom of the panel and the complete history of that mask will appear.
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 For example, Figure \[fig:ProvenanceWindow\] shows an example of a ’FillHoles’ Layer. This layer was was generated by applying a FillHoles tool to the thresholded mask of the lungs. As can be seen in the Provenance panel, the first step in creating this mask was to Import the volume layer. Next, a threshold was taken. Last, the FillHolesFilter was applied to the Threshold mask. By selecting one of the steps in the Provenance window, the parameters defining that portion of the mask history will be shown. For example, by selecting the Threshold option, the thresholding range will be displayed.
 
 Controller Window
@@ -552,13 +606,38 @@ The Controller window supplies the user with all of the data, variables, history
 
 The Actions tab displays all of the actions that have been taken during the Seg3D session. Console entries can also be made with this feature.
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 A series of actions area provided in a drop-down menu at the bottom of the window (Figure \[fig:ControllerActionList\]). Once selected, the action will be placed into a command line to the right of the drop-down menu.
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 The user can then define the parameters for the action, or simply press enter to see what parameters are required to make the action valid. If additional parameters are needed to run the action, they will be displayed in a message in the box below the command line (Figure \[fig:UsabilityMsg\]).
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 ### State Variables Tab
 
 The state variables tab shows a list of all the state settings for the session. Settings cannot be edited in this window, instead use the built-in get and set functions . The state variables include Seg3D viewer settings, tool and filter arguments and settings. For example, Figure \[fig:ToolStateVars\] shows Threshold tool state variables.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 ### Event Log Tab
 
@@ -574,6 +653,11 @@ Python Console
 The Python Console window is not opened by default when Seg3D is opened. To open the window, click the ’Window’ option in the task bar and select the Python option. The window may also be toggled by using the key command: Shift+CTRL/CMD+Y. Notice the Python Window option in the window drop-down menu is located below a separator. This indicates that the window will open a new pop-up window outside of the general Seg3D user interface.
 
 The Python Window opens a Python scripting console that can be used by advanced users to control Seg3D (Figure \[fig:PythonConsole\]). Python code wrappers are generated allowing tools, filters, the viewer and data to be controlled in Python scripts. Basic Seg3D Python code samples are available under on the [Seg3D site](http://www.seg3d.org) under User Documentation and Tutorials. An extensive treatment of python coding will not be attempted in this document; for more information on python coding, consult other resources.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 Message History Window
 ----------------------
@@ -591,6 +675,11 @@ File
 ### New Project
 
 The new project option will prompt you to save your current project such that it can be closed. A dialog box will then open asking for a Project name and a Project Path (Figure \[fig:newproject\]). The Project name will be used to create a folder for all the project data. The Project path defines the location of this folder, which can be set by typing the path or through a seperate dialogue box by pressing ’Choose Alternate Location’. The default location for this path can be set in the preferences section discussed below. A new project can also be created using the shortcut CTRL/CMD+N.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 ### Open Project
 
@@ -620,6 +709,11 @@ Data and label maps can be stored in a variety of file formats. Use this option 
 
 After the user selects the file/files to be read, a menu will appear asking the user to define the type of data being read as seen below (Figure \[fig:ImportWidget\]).
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 There are two types of files that can be read by Seg3D: Image data and label maps. The first selection indicates that the file you wish to read in contains image data. The next three selections all apply to label maps. The second selection assumes that all non-zero values are part of a single label map. The third selection will define each unique value in the file as part of a separate label map. However, the numerical value assigned to represent that label will be incrementally generated by Seg3D rather than assigned from the input file. The fourth selection is similar to the third in that it creates labels based on unique values in the input file. However, in this case the value used to represent the label is the same as the value being read from the file.
 
 ### Import Layer From Image Series
@@ -630,9 +724,19 @@ Data and label maps can be stored in a variety of file formats. Use this option 
 
 Label maps can be exported in a variety of file formats. If a layer containing a label map is selected, then the user may select the Export Segmentation option which opens the segmentation dialogue (Figure \[fig:ExportSeg\]).
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 This window allows the user to select the layers to export as label masks and the format they wish to export. The available formats include: .nrrd, .mat (matlab), .tiff, .bmp, .png, .dcm. This function can be called using the shortcut CTRL/CMD+E. The segmentation may be saved as a single file or as multiple files.
 
 After choosing a file name (single file only) and location for the segmentation, you will be shown the Export to Segmentation Summary. This window shows the layers chosen to save as a segmentation. In the case of saving as a single file, there is an additional layer (the background, which is the remainder of the volume) and an option to choose the value to represent each of the layers (Figure \[fig:ExportSeg\_2\]). I should be noted that the segmentation will only represent one value per voxel, so if any of the selected layers overlap the higher value will overwrite the region of overlap. If saving as multiple files, this window will show the names of the layers only.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 ### Export Active Data Layer
 
@@ -689,17 +793,37 @@ The **Import/Export** options allows you to turn on an off a feature that will e
 
 The **Project** options allow you to change the default project location, change the buffer size, and change how the project is saved e.g. change if the input files are embedded into the project.
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 ### View
 
 Under this tab the user is able to change many of the default view options such as the window layout (1 big window with 3 smaller windows), background color, and Grid size. In addition there are many options to customize what is seen in the visualization window. At the bottom of this window the user can change the axis labels such that the X,Y, and Z directions are not fixed to represent Sagittal, Coronal, and Axial, but the user can define which axis label is assigned to each direction.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 ### Layers
 
 Under this tab the user can change the appearance of the label masks. These options include: layer opacity, available colors, mask fill option (striped or solid), and border thickness.
 
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
+
 ### Sidebars/Tools + Filters
 
 Under this tab the user can select which menus appear on start up and which tools/filters will appear in the sidebars. This intended for the user to customize their user interface to improve the ease of use.
+
+<figure>
+  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <figcaption>C@ption</figcaption>
+</figure>
 
 Tools & Filters
 ===============
