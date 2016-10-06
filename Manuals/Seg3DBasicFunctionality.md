@@ -205,7 +205,7 @@ The default layout when Seg3D is opened and a new project is created is shown in
 Controlling Windows
 -------------------
 
-The windows on docked the side of the screen can be any of five windows explained in Chapter \[sec:windows\] (Project, Tools, Layer Manager, Volume Viewer, and Provenance windows). Each of these widows can be closed by pressing on the close button [!alt text](Seg3DBasicFunctionality_figures/close_window.png) and opened by choosing the window from the **Window** menu or using hot key. When opened, the window will appear in the last location used, or the default if never opened. The windows can also be detached from the side (by pressing the detach button [!alt text](Seg3DBasicFunctionality_figures/dock.png) and reattached to the side by moving the window close to the side of the Seg3D window, or by double clicking on the window header. Any detached window can be moved by clicking and dragging on the window header and resized by clicking and dragging on the corner of the window. Attached windows can also be resized by clicking and dragging on border between it and the viewing panels, but are more limited in the changes allowed.
+The windows on docked the side of the screen can be any of five windows explained in Chapter \[sec:windows\] (Project, Tools, Layer Manager, Volume Viewer, and Provenance windows). Each of these widows can be closed by pressing on the close button ![alt text](Seg3DBasicFunctionality_figures/close_window.png) and opened by choosing the window from the **Window** menu or using hot key. When opened, the window will appear in the last location used, or the default if never opened. The windows can also be detached from the side (by pressing the detach button ![alt text](Seg3DBasicFunctionality_figures/dock.png) and reattached to the side by moving the window close to the side of the Seg3D window, or by double clicking on the window header. Any detached window can be moved by clicking and dragging on the window header and resized by clicking and dragging on the corner of the window. Attached windows can also be resized by clicking and dragging on border between it and the viewing panels, but are more limited in the changes allowed.
 
 Viewer Panels
 -------------
@@ -248,15 +248,15 @@ Tables \[tab:2dmouse\] & \[tab:2dkey\] show the mouse and keyboard actions wh
 
 | <span>**Icon**</span>                                          | <span>**Function**</span>                                                        |
 |:---------------------------------------------------------------|:---------------------------------------------------------------------------------|
-|[!alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)    | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
-|[!alt text](Seg3DBasicFunctionality_figures/LockOFF.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
-|[!alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)     | Visibility Icon: This icon toggles the visibility of the plane in the 3D volume viewer.|
-|[!alt text](Seg3DBasicFunctionality_figures/PickingOff)         | Picking Icon: This icon toggles the ability of other planes to pick the slice to view in the panel. Only one viewer can have this option enabled. If there is only one type of plane, this cannot be disabled.|
-|[!alt text](Seg3DBasicFunctionality_figures/GridOff.png)        | Grid Icon: This icon toggles the visibility of the grid in the viewer.           |
-|[!alt text](Seg3DBasicFunctionality_figures/FlipHorizOff.png)   | Flip Horizontal Icon: This icon will horizontally flip the visualization of the slices in the viewer.|
-|[!alt text](Seg3DBasicFunctionality_figures/FlipVertOff.png)    | Flip Vertical Icon: This icon will vertically flip the visualization of the slices in the viewer.|
-|[!alt text](Seg3DBasicFunctionality_figures/OverlayOff.png)     | Overlay Icon: This icon will toggle the visibility of the overlay on the viewer. This will allow unobstructed viewing of the slices.|
-|[!alt text](Seg3DBasicFunctionality_figures/PickingLinesOff.png)| Picking Lines Icon: This icon toggles the visibility of the picking lines (shows other slices) in the viewing panel.|
+|![alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)    | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
+|![alt text](Seg3DBasicFunctionality_figures/LockOFF.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
+|![alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)     | Visibility Icon: This icon toggles the visibility of the plane in the 3D volume viewer.|
+|![alt text](Seg3DBasicFunctionality_figures/PickingOff)         | Picking Icon: This icon toggles the ability of other planes to pick the slice to view in the panel. Only one viewer can have this option enabled. If there is only one type of plane, this cannot be disabled.|
+|![alt text](Seg3DBasicFunctionality_figures/GridOff.png)        | Grid Icon: This icon toggles the visibility of the grid in the viewer.           |
+|![alt text](Seg3DBasicFunctionality_figures/FlipHorizOff.png)   | Flip Horizontal Icon: This icon will horizontally flip the visualization of the slices in the viewer.|
+|![alt text](Seg3DBasicFunctionality_figures/FlipVertOff.png)    | Flip Vertical Icon: This icon will vertically flip the visualization of the slices in the viewer.|
+|![alt text](Seg3DBasicFunctionality_figures/OverlayOff.png)     | Overlay Icon: This icon will toggle the visibility of the overlay on the viewer. This will allow unobstructed viewing of the slices.|
+|![alt text](Seg3DBasicFunctionality_figures/PickingLinesOff.png)| Picking Lines Icon: This icon toggles the visibility of the picking lines (shows other slices) in the viewing panel.|
 
 ### 3D Volume Viewer
 
@@ -281,39 +281,20 @@ Though there is no segmentation that can be performed in the 3D volume viewer, i
 
 \[tab:3dicons\]
 
-| <span>**Icon**</span> | <span>**Function**</span>                                                          |
-|:----------------------|:-----------------------------------------------------------------------------------|
-|                       | Autoview Icon: This icon forces the panel to fit the objects in viewer with        |
-|                       | maximum size.                                                                      |
-|                       | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L).      |
-|                       | Any changes to any locked viewers will change all the views. Viewers must          |
-|                       | be the same type and each must be locked to use this funtion.                      |
-|                       | Snap to Axis Icon: This icon will move the scene so that the viewing angle is      |
-|                       | aligned with the nearest axis. This will effectively “straighten” the scene.       |
-|                       | Lighting Icon: This icon toggles the lighting in the 3D viewer. With the           |
-|                       | lighting disable, the images will be shaded as if they were flat, i.e., no         |
-|                       | shading.                                                                           |
-|                       | Depth Cue Icon: This icon toggles the depth cue for the 3d viewer. This depth      |
-|                       | cue acts as fog, blending objects further from the camera into the background.     |
-|                       | Fog parameters can be changed in the volume view window (Sec. \[sec:fog\]).        |
-|                       | Clipping Icon: This icon toggles the viewing of the clipping planes in the 3D      |
-|                       | viewer. Clipping planes must be created before they can be seen in the volume      |
-|                       | viewer (Sec. \[sec:clipping\]).                                                    |
-|                       | Isosurface Visibility Icon: This icon toggles visibility of the isosurfaces in the |
-|                       | 3D viewer. This functions effects all the isosurfaces are declared visible in      |
-|                       | the layer manager.                                                                 |
-|                       | Slice Visibility Icon: This icon toggles visibility of the slices in the 3D        |
-|                       | viewer.                                                                            |
-|                       | Invisible Slice Visibility Icon: This icon toggles visibility of the invisible     |
-|                       | slices in the 3D viewer. Invisible slices are left when 2D viewers are             |
-|                       | destroyed.                                                                         |
-|                       | Volume Rendering Visibility Icon: This icon toggles visibility of the Volume       |
-|                       | Rendering in the 3D viewer. Volume Rendering must first be created in the          |
-|                       | Volume View window (Sec. \[sec:volumerendering\])                                  |
-|                       | Volume visibility Icon: This icon toggles visibility of the borders of the active  |
-|                       | layer in the 3D viewer.                                                            |
-|                       | Overlay Icon: This icon will toggle the visibility of the overlay on               |
-|                       | the viewer. This will allow unobstructed viewing of the scene.                     |
+| <span>**Icon**</span>                                                    | <span>**Function**</span>                                                          |
+|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
+|![alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)              | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
+|![alt text](Seg3DBasicFunctionality_figures/LockOff.png)                  | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
+|![alt text](Seg3DBasicFunctionality_figures/AlignOff.png)                 | Snap to Axis Icon: This icon will move the scene so that the viewing angle is aligned with the nearest axis. This will effectively “straighten” the scene.|
+|![alt text](Seg3DBasicFunctionality_figures/LightOff.png)                 | Lighting Icon: This icon toggles the lighting in the 3D viewer. With the lighting disable, the images will be shaded as if they were flat, i.e., no shading.|
+|![alt text](Seg3DBasicFunctionality_figures/FogOff.png)                   | Depth Cue Icon: This icon toggles the depth cue for the 3d viewer. This depth cue acts as fog, blending objects further from the camera into the background. Fog parameters can be changed in the volume view window (Sec. \[sec:fog\]).|
+|![alt text](Seg3DBasicFunctionality_figures/ClipOff.png)                  | Clipping Icon: This icon toggles the viewing of the clipping planes in the 3D viewer. Clipping planes must be created before they can be seen in the volume viewer (Sec. \[sec:clipping\]). |
+|![alt text](Seg3DBasicFunctionality_figures/IsosurfaceVisibleOff.png)     | Isosurface Visibility Icon: This icon toggles visibility of the isosurfaces in the 3D viewer. This functions effects all the isosurfaces are declared visible in the layer manager. |
+|![alt text](Seg3DBasicFunctionality_figures/SlicesVisibleOff.png)         | Slice Visibility Icon: This icon toggles visibility of the slices in the 3D viewer.|
+|![alt text](Seg3DBasicFunctionality_figures/InvisibleSlicesVisibleOff.png)| Invisible Slice Visibility Icon: This icon toggles visibility of the invisible slices in the 3D viewer. Invisible slices are left when 2D viewers are destroyed. |
+|![alt text](Seg3DBasicFunctionality_figures/VolumeRenderingOff.png)       | Volume Rendering Visibility Icon: This icon toggles visibility of the Volume Rendering in the 3D viewer. Volume Rendering must first be created in the Volume View window (Sec. \[sec:volumerendering\])|
+|![alt text](Seg3DBasicFunctionality_figures/VolumeVisibleOff.png)         | Volume visibility Icon: This icon toggles visibility of the borders of the active layer in the 3D viewer.                                                            |
+|![alt text](Seg3DBasicFunctionality_figures/OverlayOff.png)               | Overlay Icon: This icon will toggle the visibility of the overlay on the viewer. This will allow unobstructed viewing of the scene.                     |
 
 Tool Bar
 --------
@@ -322,28 +303,23 @@ The tool bar located at the bottom of the Seg3D window contains some useful func
 
 \[tab:toolbaricons\]
 
-| <span>**Icon**</span> | <span>**Function**</span>                                        |
-|:----------------------|:-----------------------------------------------------------------|
-|                       | Message History Icon: Opens Message History window.              |
-|                       |                                                                  |
-|                       | Switch Tool Icon: Switches between displaying location of mouse  |
-|                       | in the volume and the quick menu to switch between the active    |
-|                       | tools and layers.                                                |
-|                       | World Icon: Switches between coordinate system displayed in      |
-|                       | the information tool bar. The options are relative (indexed) and |
-|                       | absolute (world).                                                |
+| <span>**Icon**</span>                                     | <span>**Function**</span>                                        |
+|:----------------------------------------------------------|:-----------------------------------------------------------------|
+|![alt text](Seg3DBasicFunctionality_figures/TextOff.png)   | Message History Icon: Opens Message History window. |
+|![alt text](Seg3DBasicFunctionality_figures/SwitchTool.png)| Switch Tool Icon: Switches between displaying location of mouse in the volume and the quick menu to switch between the active tools and layers.|
+|![alt text](Seg3DBasicFunctionality_figures/WorldOff.png)  | World Icon: Switches between coordinate system displayed in the information tool bar. The options are relative (indexed) and absolute (world). |
 
 The information toolbar will show information about the volume at the location indicated by the mouse. As shown in Figure \[fig:geometricinfo\], the information given is the x, y, and z coordinates and the value of the layer at the mouse position in the selected volume. By clicking on the world icon (Table \[tab:toolbaricons\]), you may toggle between indexed values (relative) and the world values (absolute, considers spacing). The data shown is changed when the mouse is moved, the active slice is changed, or the active layer is changed.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/geometric_info.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
 By clicking on the switch tool icon (Table \[tab:toolbaricons\]), the tool bar will display a quick menu for the available tools and layers instead of geometric information. As seen in Table \[tab:toolbaricons\], this menu will display the active tool and layer. If the either is clicked, a dropped down menu will appear allowing the user to switch to an open tool or layer. This can be especially useful in full screen mode.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/quick_menu.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -408,7 +384,7 @@ Project Window
 --------------
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/ProjectWindow.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -424,7 +400,7 @@ Tools Window
 ------------
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/ToolWindow.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -438,7 +414,7 @@ Layer Manager Window
 The layer manager window is the last of the three windows that open by default upon launching Seg3D. This window is positioned to the right side of the Seg3D window pane and contains all of the mask and volume files involved with the session. If a file is not selected when Seg3D launches, this window will be blank, otherwise it will contain the volume and mask surface files associated with the opened file.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/LayerWindow.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -450,44 +426,25 @@ A volume file is represented by a gray image with multiple stacked planes. A lab
 
 | <span>**Icon**</span> | <span>**Function**</span>                                                                   |
 |:----------------------|:--------------------------------------------------------------------------------------------|
-|                       | Visible Icon: The eye icon displays the current mask. When the eye is                       |
-|                       | highlighted the mask is visible in the view plane, when it is not, the mask                 |
-|                       | is ’turned off.’                                                                            |
-|                       | Info Icon: The ’i’ icon displays information about the layer.                               |
-|                       |                                                                                             |
-|                       | Opacity Icon: The histogram-looking icon allows the user to change opacity                  |
-|                       | levels of the layer.                                                                        |
-|                       | Appearance Icon: The paintbrush-like icon allows the user to change the                     |
-|                       | layer’s appearance.                                                                         |
-|                       | Lock Icon: The lock icon allows users to lock the layer to further editing.                 |
-|                       |                                                                                             |
-|                       | Isosurface Visible Icon: This icon toggles visibility of the layers isosurface.             |
-|                       | Isosurfaces must be computed first.                                                         |
-|                       | Isosurface Compute Icon: This icon generates the isosurface for the mask.                   |
-|                       | It must be clicked before the IsosurfaceMenu or IsosurfaceDelete icons                      |
-|                       | become active.                                                                              |
-|                       | IsosurfaceDelete Icon: This icon deletes active isosurfaces (if the mask                    |
-|                       | has one).                                                                                   |
-|                       | Shift+Left Button Drag Layer: This moves a layer from one group to another with resampling. |
+|![alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)          | Visible Icon: The eye icon displays the current mask. When the eye is highlighted the mask is visible in the view plane, when it is not, the mask is ’turned off.’|
+|![alt text](Seg3DBasicFunctionality_figures/infoOff.png)             | Info Icon: The ’i’ icon displays information about the layer.|
+|![alt text](Seg3DBasicFunctionality_figures/OpacityOff.png)          | Opacity Icon: The histogram-looking icon allows the user to change opacity levels of the layer.|
+|![alt text](Seg3DBasicFunctionality_figures/AppearanceOff.png)       | Appearance Icon: The paintbrush-like icon allows the user to change th layer’s appearance.|
+|![alt text](Seg3DBasicFunctionality_figures/LockOff.png)             | Lock Icon: The lock icon allows users to lock the layer to further editing.|
+|![alt text](Seg3DBasicFunctionality_figures/IsosurfaceVisibleOff.png)| Isosurface Visible Icon: This icon toggles visibility of the layers isosurface. Isosurfaces must be computed first.|
+|![alt text](Seg3DBasicFunctionality_figures/IsosurfaceComputeOff.png)| Isosurface Compute Icon: This icon generates the isosurface for the mask. It must be clicked before the IsosurfaceMenu or IsosurfaceDelete icons become active.|
+|![alt text](Seg3DBasicFunctionality_figures/IsosurfaceDeleteOff.png) | IsosurfaceDelete Icon: This icon deletes active isosurfaces (if the mask has one).|
+|                                                                     | Shift+Left Button Drag Layer: This moves a layer from one group to another with resampling.|
 
 Each volume or mask label has standard, associated icons below their names. Table \[tab:layericons\] displays and describes each of these icons. These icons represent tools that are available for each individual layer.
 
 \[tab:layertopicons\]
 
-| <span>**Icon**</span> | <span>**Function**</span>                                                          |
-|:----------------------|:-----------------------------------------------------------------------------------|
-|                       | Expanded Layer Group Icon: This icon indicates that the layer group is             |
-|                       | visible, showing all the layers in it. The layer group can be collapsed,           |
-|                       | and expanded again by clicking on this icon. This turns into a right arrow         |
-|                       | when collapsed.                                                                    |
-|                       | Visible Icon: This icon will toggle the visibility of all the layers in the group. |
-|                       | If some of the layers are not visible, this icon will make those layers visible    |
-|                       | so that all the layers are visible. If all layers are visible, this will turn off  |
-|                       | visibility.                                                                        |
-|                       | Isosurface Visibile Icon: This icon toggles visibility of all computed isosurfaces |
-|                       | in the layer group. If there are computed isosurfaces that are not visible, this   |
-|                       | icon will make those visible. If all computed Isosurfaces are visible, this will   |
-|                       | hide them all.                                                                     |
+| <span>**Icon**</span>                                                | <span>**Function**</span>                                                          |
+|:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
+|![alt text](Seg3DBasicFunctionality_figures/DownArrow.png)            | Expanded Layer Group Icon: This icon indicates that the layer group is visible, showing all the layers in it. The layer group can be collapsed, and expanded again by clicking on this icon. This turns into a right arrow when collapsed.|
+|![alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)           | Visible Icon: This icon will toggle the visibility of all the layers in the group. If some of the layers are not visible, this icon will make those layers visible so that all the layers are visible. If all layers are visible, this will turn off visibility.|
+|![alt text](Seg3DBasicFunctionality_figures/IsosurfaceVisibleOff.png) | Isosurface Visibile Icon: This icon toggles visibility of all computed isosurfaces in the layer group. If there are computed isosurfaces that are not visible, this icon will make those visible. If all computed Isosurfaces are visible, this will hide them all.|
 
 Layers in Seg3D are arranged into layer groups. Layer groups are formed with layers that have the same geometric information, that is the same origin, spacing, and size. Groups are separated by panels with an orange header. Generally speaking, most tools and filters requiring more than one input can only operate on layers in the same group (and therefore the same grid geometry).
 
@@ -495,20 +452,10 @@ Layers in Seg3D are arranged into layer groups. Layer groups are formed with lay
 
 | <span>**Icon**</span> | <span>**Function**</span>                                                     |
 |:----------------------|:------------------------------------------------------------------------------|
-|                       | Duplicate Layer Icon: This icon allows the user to duplicate one or more      |
-|                       | layers. Once this icon is clicked, the user will be prompted to choose the    |
-|                       | layers to duplicate by checking the boxes next to the layers. The duplicated  |
-|                       | layers will have the same name with “copy” appended to the front.             |
-|                       | Isosurface Menu Icon: This icon will open a menu that allows the user to      |
-|                       | change some of the isosurface rendering parameters for all the isosurfaces    |
-|                       | in the layer group. These parameters are the quality and capping of the       |
-|                       | isosurface.                                                                   |
-|                       | Delete Layer Icon: This icon allows the user to delete one or more layer from |
-|                       | the layer group. When the icon is clicked, the user will be prompted to       |
-|                       | choose the layers to delete by clicking the box next to the layer. There      |
-|                       | will be a confirmation window after the selection is made.                    |
-|                       | New Layer Icon: This icon will create a new mask layer that is the same       |
-|                       | size as those in the layer group but will be empty.                           |
+|![alt text](Seg3DBasicFunctionality_figures/DuplicateOff.png)     | Duplicate Layer Icon: This icon allows the user to duplicate one or more layers. Once this icon is clicked, the user will be prompted to choose the layers to duplicate by checking the boxes next to the layers. The duplicated layers will have the same name with “copy” appended to the front.|
+|![alt text](Seg3DBasicFunctionality_figures/IsosurfaceMenuOff.png)| Isosurface Menu Icon: This icon will open a menu that allows the user to change some of the isosurface rendering parameters for all the isosurfaces in the layer group. These parameters are the quality and capping of the isosurface.|
+|![alt text](Seg3DBasicFunctionality_figures/Minus.png)            | Delete Layer Icon: This icon allows the user to delete one or more layer from the layer group. When the icon is clicked, the user will be prompted to choose the layers to delete by clicking the box next to the layer. There will be a confirmation window after the selection is made.|
+|![alt text](Seg3DBasicFunctionality_figures/Add.png)              | New Layer Icon: This icon will create a new mask layer that is the same size as those in the layer group but will be empty.|
 
 There are some functions that are operated as a group. These are indicated by the icons on the top of the pane, in the orange bar (Shown in Tablle \[tab:layertopicons\]). Additionally, there are some other icons at the bottom of the group that control some of the group functions (Table \[tab:layerbottomicons\]). Hovering the cursor over the icon will display the the use of each additional icon.
 
@@ -523,7 +470,7 @@ The Fog Panel allows the user to control the fog density. In order to observe th
 
 Fog density can be tuned by using the slider in the the Volume View Window. By default the density value is 1.00. If the fog density increases, the fogging effect increases.
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/FogPanel.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -533,7 +480,7 @@ Fog density can be tuned by using the slider in the the Volume View Window. By d
 The Clipping Planes Panel allows users to define multiple clipping planes with which to clip the volume. + and - signs at the top of the panel represent individual clipping planes. The + sign is an enabled clipping plan, while the - sign is disabled. The clipping panel option in the viewer window is activated by default.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/ClippingPanel.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -546,7 +493,7 @@ The final option in the Clipping Planes panel is the option to ’Reverse Normal
 ### Volume Rendering Panel
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/VolRendPanel.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -557,7 +504,7 @@ The volume rendering panel allows users to generate a volume directly from the v
 With these two options selected, the user now has three rendering options. These options are Simple, Faux Shading, and Ambient Occlusion.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/VolRendOpt.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -589,7 +536,7 @@ The Provenance Window is not opened by default when Seg3D is opened. To open the
 The Provenance Window shows the history of the active layer. In order to see which actions lead to the current layer, highlight the layer in the ’Layer Window’ on the left of the Seg3D display. Initially, nothing will appear in the Provenance window. Click the Refresh button at the bottom of the panel and the complete history of that mask will appear.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/ProvenanceWindow.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -607,21 +554,21 @@ The Controller window supplies the user with all of the data, variables, history
 The Actions tab displays all of the actions that have been taken during the Seg3D session. Console entries can also be made with this feature.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/Controller_OnStartup.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
 A series of actions area provided in a drop-down menu at the bottom of the window (Figure \[fig:ControllerActionList\]). Once selected, the action will be placed into a command line to the right of the drop-down menu.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/Controller_ActionList.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
 The user can then define the parameters for the action, or simply press enter to see what parameters are required to make the action valid. If additional parameters are needed to run the action, they will be displayed in a message in the box below the command line (Figure \[fig:UsabilityMsg\]).
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/Controller_UsabilityMsg.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -630,12 +577,7 @@ The user can then define the parameters for the action, or simply press enter to
 The state variables tab shows a list of all the state settings for the session. Settings cannot be edited in this window, instead use the built-in get and set functions . The state variables include Seg3D viewer settings, tool and filter arguments and settings. For example, Figure \[fig:ToolStateVars\] shows Threshold tool state variables.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
-  <figcaption>C@ption</figcaption>
-</figure>
-
-<figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/Controller_ToolStateVars.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -655,7 +597,7 @@ The Python Console window is not opened by default when Seg3D is opened. To open
 The Python Window opens a Python scripting console that can be used by advanced users to control Seg3D (Figure \[fig:PythonConsole\]). Python code wrappers are generated allowing tools, filters, the viewer and data to be controlled in Python scripts. Basic Seg3D Python code samples are available under on the [Seg3D site](http://www.seg3d.org) under User Documentation and Tutorials. An extensive treatment of python coding will not be attempted in this document; for more information on python coding, consult other resources.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/PythonConsole_blank.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -677,7 +619,7 @@ File
 The new project option will prompt you to save your current project such that it can be closed. A dialog box will then open asking for a Project name and a Project Path (Figure \[fig:newproject\]). The Project name will be used to create a folder for all the project data. The Project path defines the location of this folder, which can be set by typing the path or through a seperate dialogue box by pressing ’Choose Alternate Location’. The default location for this path can be set in the preferences section discussed below. A new project can also be created using the shortcut CTRL/CMD+N.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/newProject.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -710,7 +652,7 @@ Data and label maps can be stored in a variety of file formats. Use this option 
 After the user selects the file/files to be read, a menu will appear asking the user to define the type of data being read as seen below (Figure \[fig:ImportWidget\]).
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/ImportWidget.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -725,7 +667,7 @@ Data and label maps can be stored in a variety of file formats. Use this option 
 Label maps can be exported in a variety of file formats. If a layer containing a label map is selected, then the user may select the Export Segmentation option which opens the segmentation dialogue (Figure \[fig:ExportSeg\]).
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/ExportSeg.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -734,7 +676,7 @@ This window allows the user to select the layers to export as label masks and th
 After choosing a file name (single file only) and location for the segmentation, you will be shown the Export to Segmentation Summary. This window shows the layers chosen to save as a segmentation. In the case of saving as a single file, there is an additional layer (the background, which is the remainder of the volume) and an option to choose the value to represent each of the layers (Figure \[fig:ExportSeg\_2\]). I should be noted that the segmentation will only represent one value per voxel, so if any of the selected layers overlap the higher value will overwrite the region of overlap. If saving as multiple files, this window will show the names of the layers only.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/ExportSeg_2" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -794,7 +736,7 @@ The **Import/Export** options allows you to turn on an off a feature that will e
 The **Project** options allow you to change the default project location, change the buffer size, and change how the project is saved e.g. change if the input files are embedded into the project.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/Pref_gen.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -803,7 +745,7 @@ The **Project** options allow you to change the default project location, change
 Under this tab the user is able to change many of the default view options such as the window layout (1 big window with 3 smaller windows), background color, and Grid size. In addition there are many options to customize what is seen in the visualization window. At the bottom of this window the user can change the axis labels such that the X,Y, and Z directions are not fixed to represent Sagittal, Coronal, and Axial, but the user can define which axis label is assigned to each direction.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/Pref_view.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -812,7 +754,7 @@ Under this tab the user is able to change many of the default view options such 
 Under this tab the user can change the appearance of the label masks. These options include: layer opacity, available colors, mask fill option (striped or solid), and border thickness.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/Pref_layers.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
@@ -821,7 +763,7 @@ Under this tab the user can change the appearance of the label masks. These opti
 Under this tab the user can select which menus appear on start up and which tools/filters will appear in the sidebars. This intended for the user to customize their user interface to improve the ease of use.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/" id="!">
+  <img src="Seg3DBasicFunctionality_figures/Pref_side.png" id="!">
   <figcaption>C@ption</figcaption>
 </figure>
 
