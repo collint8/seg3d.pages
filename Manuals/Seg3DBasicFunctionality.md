@@ -210,27 +210,25 @@ The windows on docked the side of the screen can be any of five windows explaine
 3.2 Viewer Panels
 -----------------
 
-As seen in <a href="#blank">Figure 3.1</a>, there are a number of viewer panels in Seg3D, though the exact number can be set (see Section [3.4](#viewing-option)). Each of these viewer windows can be changed in size and in type. The type options are: volume, axial, sagittal, and coronal. The names of the 2D planes can be changed by the user in preferences (Sec. [5.4](#preferences)). You can change the view of each pane by clicking on the view name and choosing the view to change it too. This is a drop down menu, so you can scroll over the name and the view will also change. There are also shortcuts to change views (V–Volume, X–Sagittal, Y–Coronal, and Z–Axial). There are several icons in each view panel, as well as mouse and keyboard shortcuts. The controls for each of the 2D viewers will be described below, as will the controls for the 3D volume viewer.
+As seen in <a href="#blank">Figure 3.1</a>, there are a number of viewer panels in Seg3D, though the exact number can be set (see Section [3.4](#viewing-options)). Each of these viewer windows can be changed in size and in type. The type options are: volume, axial, sagittal, and coronal. The names of the 2D planes can be changed by the user in preferences (Sec. [5.4](#preferences)). You can change the view of each pane by clicking on the view name and choosing the view to change it too. This is a drop down menu, so you can scroll over the name and the view will also change. There are also shortcuts to change views (V–Volume, X–Sagittal, Y–Coronal, and Z–Axial). There are several icons in each view panel, as well as mouse and keyboard shortcuts. The controls for each of the 2D viewers will be described below, as will the controls for the 3D volume viewer.
 
 ### 3.2.1 2D Slice Viewer
 
-Tables <a href="#tab2dmouse">asdf</a> & <a href="tab2dkey">asdf</a> show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer (Table \[tab:2dicons\]).
+Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer (Table \[tab:2dicons\]).
 
-| <span>**Mouse Command**</span> | <span>**Function**<id="#tab2dmouse"></span>                              |
+| <span>**Mouse Command**</span> | <span>**Function**<a><id="#tab2dmouse"></a></span>                              |
 |:-------------------------------|:-------------------------------------------------------------------------|
-| left button drag               | Modify brightness and contrast.                                          |
-|                                | Vertical is contrast, horizontal is brightness.                          |
-| scroll up/down                 | Move up/down a slice                                                     |
-|                                | Note: using Shift maybe needed while using some tools (like paint brush) |
-| CMD/CTRL+right button          | Move slices in other planes to intersect at cursor.                      |
-|                                | Viewers must have the picking icon enabled (Table \[tab:2dicons\]).      |
-| Shift+left button drag         | Pan view                                                                 |
-| Shift+right button drag        | Zoom view in/out                                                         |
+| left button drag               | Modify brightness and contrast. Vertical is contrast, horizontal is brightness.                          |
+| scroll up/down                 | Move up/down a slice Note: using Shift maybe needed while using some tools (like paint brush) |
+| CMD/CTRL+right button          | Move slices in other planes to intersect at cursor. Viewers must have the picking icon enabled (Table \[tab:2dicons\]).      |
+| Shift+left button drag         | Pan view         |
+| Shift+right button drag        | Zoom view in/out       |
+[this is just going here]
 
 | <span>**Keyboard Action**</span> | <span>**Function**</span>                   |
 |:---------------------------------|:------------------------------------------------------------|
-| up arrow,&gt;                    | move up one slice                                           |
-| down arrow,&lt;                  | move down one slice                                         |
+| up arrow,&gt;                    | move up one slice              |
+| down arrow,&lt;                  | move down one slice                  |
 | Shift+up arrow,Shift+&gt;        | Jump up n slices (set n in preferences)                     |
 | Shift+down arrow,Shift+&lt;      | Jump down n slices (set n in preferences)                   |
 | left/right arrow                 | Change active layer to previous/next layer                  |
@@ -244,9 +242,9 @@ Tables <a href="#tab2dmouse">asdf</a> & <a href="tab2dkey">asdf</a> show the 
 | <span>**Icon**</span>                                          | <span>**Function**</span> <id="#tab2dicons">|
 |:---------------------------------------------------------------|:---------------------------------------------------------------------------------|
 |![alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)    | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
-|![alt text](Seg3DBasicFunctionality_figures/LockOFF.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
+|![alt text](Seg3DBasicFunctionality_figures/LockOff.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
 |![alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)     | Visibility Icon: This icon toggles the visibility of the plane in the 3D volume viewer.|
-|![alt text](Seg3DBasicFunctionality_figures/PickingOff)         | Picking Icon: This icon toggles the ability of other planes to pick the slice to view in the panel. Only one viewer can have this option enabled. If there is only one type of plane, this cannot be disabled.|
+|![alt text](Seg3DBasicFunctionality_figures/PickingOff.png)     | Picking Icon: This icon toggles the ability of other planes to pick the slice to view in the panel. Only one viewer can have this option enabled. If there is only one type of plane, this cannot be disabled.|
 |![alt text](Seg3DBasicFunctionality_figures/GridOff.png)        | Grid Icon: This icon toggles the visibility of the grid in the viewer.           |
 |![alt text](Seg3DBasicFunctionality_figures/FlipHorizOff.png)   | Flip Horizontal Icon: This icon will horizontally flip the visualization of the slices in the viewer.|
 |![alt text](Seg3DBasicFunctionality_figures/FlipVertOff.png)    | Flip Vertical Icon: This icon will vertically flip the visualization of the slices in the viewer.|
@@ -659,7 +657,7 @@ This window allows the user to select the layers to export as label masks and th
 After choosing a file name (single file only) and location for the segmentation, you will be shown the Export to Segmentation Summary. This window shows the layers chosen to save as a segmentation. In the case of saving as a single file, there is an additional layer (the background, which is the remainder of the volume) and an option to choose the value to represent each of the layers (<a href="#ExportSeg\_2">Figure 5.4</a>). I should be noted that the segmentation will only represent one value per voxel, so if any of the selected layers overlap the higher value will overwrite the region of overlap. If saving as multiple files, this window will show the names of the layers only.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/ExportSeg_2" id="ExportSeg_2">
+  <img src="Seg3DBasicFunctionality_figures/ExportSeg_2.png" id="ExportSeg_2">
   <figcaption>Figure 5.4 This window appears when the user selects export segmentation and a file is chosen.  This allows the users to choose the labels to use for each material.</figcaption>
 </figure>
 
@@ -899,8 +897,6 @@ The threshold tool generates a mask label from an image data volume and the valu
 The threshold range can be set in two ways: the slider provided in the tool window will set the maximum and minimum for thresholding or seed points can be placed throughout the volume and the values at those points will set the range to threshold. A preview of the threshold regions will be displayed in the 2D viewers (can be disabled in the tool window). The opacity of this preview can be set using the provided slider. The threshold range will also be shown with the image histogram in the tool window. The threshold range and histogram can also be based on a logarithmic scale (more homogenous) or linear scale.
 
 Using the threshold tool can provide a very good rough segmentation of the region of interest, but may require some editing. The paint brush and polyline tools are manual ways to remove excess regions in the mask, but the user should also try other mask filters such as connected component and connected component size (and another threshold) to remove stray regions of selected noise.
-
-]
 
 | <span>**Action**</span> | <span>**Function**</span> <id="#tabthresholdkey">|
 |:------------------------|:-------------------------------------------------|
