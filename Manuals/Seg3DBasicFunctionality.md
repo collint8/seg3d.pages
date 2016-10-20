@@ -216,14 +216,13 @@ As seen in <a href="#blank">Figure 3.1</a>, there are a number of viewer panels 
 
 Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer (Table \[tab:2dicons\]).
 
-| <span>**Mouse Command**</span> | <span>**Function**<a><id="#tab2dmouse"></a></span>                              |
+| <span>**Mouse Command**</span> | <span>**Function**<a name="tab2dmouse"></a></span>                              |
 |:-------------------------------|:-------------------------------------------------------------------------|
 | left button drag               | Modify brightness and contrast. Vertical is contrast, horizontal is brightness.                          |
 | scroll up/down                 | Move up/down a slice Note: using Shift maybe needed while using some tools (like paint brush) |
 | CMD/CTRL+right button          | Move slices in other planes to intersect at cursor. Viewers must have the picking icon enabled (Table \[tab:2dicons\]).      |
 | Shift+left button drag         | Pan view         |
 | Shift+right button drag        | Zoom view in/out       |
-[this is just going here]
 
 | <span>**Keyboard Action**</span> | <span>**Function**</span>                   |
 |:---------------------------------|:------------------------------------------------------------|
@@ -237,7 +236,7 @@ Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the
 | P                                | Toggle picking state                                        |
 | T                                | Toggle overlay visibility                                   |
 | L                                | Toggle lock viewer (to other locked views of the same type) |
-<caption> this is a table.<id="#tab2dkey"></caption>
+[this is a table.]
 
 | <span>**Icon**</span>                                          | <span>**Function**</span> <id="#tab2dicons">|
 |:---------------------------------------------------------------|:---------------------------------------------------------------------------------|
