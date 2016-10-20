@@ -15,7 +15,7 @@ tool: Tools
 
 ### Summary
 
-The measure tool will calculate the distance between two points chosen in the viewer windows. The points, line segments, and measurements in the 2D viewers and record the measurements in a table in the tools window. This tool will calculate and retain several different distances allowing the user to copy the measurements to other software (as a text or into a spreadsheet) using the two copy functions in the tool window (*selection* or *all data*).
+The Measure tool will calculate the distance between two points chosen in the viewer windows. The points, line segments, and measurements in the 2D viewers and record the measurements in a table in the tools window. This tool will calculate and retain several different distances allowing the user to copy the measurements to other software (as a text or into a spreadsheet) using the two copy functions in the tool window (*selection* or *all data*).
 
 ### Detailed Description
 
