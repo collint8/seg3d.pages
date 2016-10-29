@@ -214,19 +214,20 @@ As seen in <a href="#blank">Figure 3.1</a>, there are a number of viewer panels 
 
 ### 3.2.1 2D Slice Viewer
 
-Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer (Table [THIS ONE](#2dicons)).
+Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer (Table [THIS ONE](#tab2dicons)).
 
-| <span>**Mouse Command**</span> | <span>**Function**<a name="tab2dmouse"></a></span>                              |
-|:-------------------------------|:-------------------------------------------------------------------------|
+| **Mouse Command** | **Function**<a name="tab2dmouse"></a>                              |
+|:----|:----|
 | left button drag               | Modify brightness and contrast. Vertical is contrast, horizontal is brightness.                          |
 | scroll up/down                 | Move up/down a slice Note: using Shift maybe needed while using some tools (like paint brush) |
-| CMD/CTRL+right button          | Move slices in other planes to intersect at cursor. Viewers must have the picking icon enabled (Table \[tab:2dicons\]).      |
+| CMD/CTRL+right button          | Move slices in other planes to intersect at cursor. Viewers must have the picking icon enabled ([Table 3.3](#2dicons)).      |
 | Shift+left button drag         | Pan view         |
 | Shift+right button drag        | Zoom view in/out       |
-[Table caption][pleasework]
 
-| <span>**Keyboard Action**</span> | <span>**Function**</span>          |
-|:---------------------------------|:------------------------------------------------------------|
+Table 3.1: List of mouse functions in the 2D viewers.
+
+| **Keyboard Action** | **Function** <a name="2dkey"></a>         |
+|:----|:----|
 | up arrow,&gt;                    | move up one slice              |
 | down arrow,&lt;                  | move down one slice                  |
 | Shift+up arrow,Shift+&gt;        | Jump up n slices (set n in preferences)                     |
@@ -238,10 +239,10 @@ Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the
 | T                                | Toggle overlay visibility                                   |
 | L                                | Toggle lock viewer (to other locked views of the same type) |
 
-Table: I saw this too.
+Table 3.2: List of keyboard actions in the 2D viewers.
 
-| <span>**Icon**</span>                                          | <span>**Function**</span> <a name="tab2dicons"></a>|
-|:---------------------------------------------------------------|:---------------------------------------------------------------------------------|
+| **Icon**                                          | **Function** <a name="tab2dicons"></a>|
+|:----|:----|
 |![alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)    | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
 |![alt text](Seg3DBasicFunctionality_figures/LockOff.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
 |![alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)     | Visibility Icon: This icon toggles the visibility of the plane in the 3D volume viewer.|
@@ -251,29 +252,32 @@ Table: I saw this too.
 |![alt text](Seg3DBasicFunctionality_figures/FlipVertOff.png)    | Flip Vertical Icon: This icon will vertically flip the visualization of the slices in the viewer.|
 |![alt text](Seg3DBasicFunctionality_figures/OverlayOff.png)     | Overlay Icon: This icon will toggle the visibility of the overlay on the viewer. This will allow unobstructed viewing of the slices.|
 |![alt text](Seg3DBasicFunctionality_figures/PickingLinesOff.png)| Picking Lines Icon: This icon toggles the visibility of the picking lines (shows other slices) in the viewing panel.|
-[why not]
+
+Table 3.3: List of icons and actions in the 2D viewers.
 
 ### 3.2.2 3D Volume Viewer
 
 Though there is no segmentation that can be performed in the 3D volume viewer, it is a very useful function in Seg3D. It allows the user to see the 3D representation of the original and segmented data. There are many objects that can be viewed in the 3D viewer such as the 2D slices in 3D, isosurfaces of the segmented data, volume rendering of the image data, depth cues, and clipping planes. The purpose of this viewer is to allow you to view your data in as many ways as possible to facilitate segmentation.
 
-
-
-| <span>**Mouse Command**</span> | <span>**Function**</span> <id="#tab3dmouse">|
-|:-------------------------------|:--------------------------------------------|
+| **Mouse Command** | **Function** <a name="3dmouse"></a>|
+|:----|:----|
 | left button drag               | Pan scene                                   |
 | middle button drag             | Rotate scene                                |
 | right button drag              | Zoom in/out on scene                        |
 
-| <span>**Keyboard Action**</span> | <span>**Function**</span> <id="#tab2dkey">                          |
-|:---------------------------------|:------------------------------------------------------------|
+Table 3.4: List of mouse functions in the 3D volume viewer
+
+| **Keyboard Action** | **Function** <a name="2dkey"></a> |
+|:----|:----|
 | H                                | Toggle volume lighing                                       |
 | I                                | Toggle isosurface visibility                                |
 | T                                | Toggle overlay visibility                                   |
 | L                                | Toggle lock viewer (to other locked views of the same type) |
 
-| <span>**Icon**</span>                                                    | <span>**Function**</span> <id="#tab3dicons">                                       |
-|:-------------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
+Table 3.5: List of keyboard actions in the 3D volume viewer
+
+| **Icon** | **Function** <a name="3dicons"></a> |
+|:----|:----|
 |![alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)              | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
 |![alt text](Seg3DBasicFunctionality_figures/LockOff.png)                  | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
 |![alt text](Seg3DBasicFunctionality_figures/AlignOff.png)                 | Snap to Axis Icon: This icon will move the scene so that the viewing angle is aligned with the nearest axis. This will effectively “straighten” the scene.|
@@ -287,25 +291,29 @@ Though there is no segmentation that can be performed in the 3D volume viewer, i
 |![alt text](Seg3DBasicFunctionality_figures/VolumeVisibleOff.png)         | Volume visibility Icon: This icon toggles visibility of the borders of the active layer in the 3D viewer.                                                            |
 |![alt text](Seg3DBasicFunctionality_figures/OverlayOff.png)               | Overlay Icon: This icon will toggle the visibility of the overlay on the viewer. This will allow unobstructed viewing of the scene.                     |
 
+Table 3.6: List of icons and actions in the 3D viewer
+
 3.3 Tool Bar
 ------------
 
-The tool bar located at the bottom of the Seg3D window contains some useful functions. The first is the message history icon on the left side of the tool bar (Table \[tab:toolbaricons\]). For more information on this window, see Sec. [4.8](#message-history-window). The other use function is on the right side of the tool bar, the information tool bar. This tool bar can switch between displaying information about the active layer at the mouse location and a quick menu for the active layers by clicking on the switch tool button (Table \[tab:toolbaricons\]).
+The tool bar located at the bottom of the Seg3D window contains some useful functions. The first is the message history icon on the left side of the tool bar ([Table 3.7](#toolbaricons)). For more information on this window, see [Sec. 4.8](#message-history-window). The other use function is on the right side of the tool bar, the information tool bar. This tool bar can switch between displaying information about the active layer at the mouse location and a quick menu for the active layers by clicking on the switch tool button ([Table 3.7](#toolbaricons)).
 
-| <span>**Icon**</span>                                     | <span>**Function**</span> <id="#tabtoolbaricons">                                       |
-|:----------------------------------------------------------|:-----------------------------------------------------------------|
+| **Icon** | **Function** <a name="toolbaricons"></a>|
+|:----|:----|
 |![alt text](Seg3DBasicFunctionality_figures/TextOff.png)   | Message History Icon: Opens Message History window. |
 |![alt text](Seg3DBasicFunctionality_figures/SwitchTool.png)| Switch Tool Icon: Switches between displaying location of mouse in the volume and the quick menu to switch between the active tools and layers.|
 |![alt text](Seg3DBasicFunctionality_figures/WorldOff.png)  | World Icon: Switches between coordinate system displayed in the information tool bar. The options are relative (indexed) and absolute (world). |
 
-The information toolbar will show information about the volume at the location indicated by the mouse. As shown in <a href="#geometricinfo">Figure 3.2</a>, the information given is the x, y, and z coordinates and the value of the layer at the mouse position in the selected volume. By clicking on the world icon (Table \[tab:toolbaricons\]), you may toggle between indexed values (relative) and the world values (absolute, considers spacing). The data shown is changed when the mouse is moved, the active slice is changed, or the active layer is changed.
+Table 3.7: List of icons and actions in the tool bar at the bottom of Seg3D
+
+The information toolbar will show information about the volume at the location indicated by the mouse. As shown in <a href="#geometricinfo">Figure 3.2</a>, the information given is the x, y, and z coordinates and the value of the layer at the mouse position in the selected volume. By clicking on the world icon ([Table 3.7](#toolbaricons)), you may toggle between indexed values (relative) and the world values (absolute, considers spacing). The data shown is changed when the mouse is moved, the active slice is changed, or the active layer is changed.
 
 <figure>
   <img src="Seg3DBasicFunctionality_figures/geometric_info.png" id="geometricinfo">
   <figcaption>Figure 3.2 Geometric Information shown in the information tool bar.</figcaption>
 </figure>
 
-By clicking on the switch tool icon (Table \[tab:toolbaricons\]), the tool bar will display a quick menu for the available tools and layers instead of geometric information. As seen in Table \[tab:toolbaricons\], this menu will display the active tool and layer. If the either is clicked, a dropped down menu will appear allowing the user to switch to an open tool or layer. This can be especially useful in full screen mode.
+By clicking on the switch tool icon ([Table 3.7](#toolbaricons)), the tool bar will display a quick menu for the available tools and layers instead of geometric information. As seen in [Table 3.7](#toolbaricons), this menu will display the active tool and layer. If the either is clicked, a dropped down menu will appear allowing the user to switch to an open tool or layer. This can be especially useful in full screen mode.
 
 <figure>
   <img src="Seg3DBasicFunctionality_figures/quick_menu.png" id="quickmenu">
@@ -353,16 +361,18 @@ This generates six viewers, the maximum number, three on the left and right. Thi
 
 
 
-| <span>**Keyboard Action**</span> | <span>**Function**</span> <id="#tabviewerkey">|
-|:---------------------------------|:----------------------------------------------|
-| CTRL/CMD+F                       | Toggle Full Screen Mode                       |
-| Alt+0                            | One viewer only                               |
-| Alt+1                            | One and One                                   |
-| Alt+2                            | One and Two                                   |
-| Alt+3                            | One and Three                                 |
-| Alt+4                            | Two and Two                                   |
-| Alt+5                            | Two and Three                                 |
-| Alt+6                            | Three and Three                               |
+| **Keyboard Action** | **Function** <a name="viewerkey"></a> |
+|:----|:----|
+| CTRL/CMD+           | Toggle Full Screen Mode               |
+| Alt+0               | One viewer only                       |
+| Alt+1               | One and One                           |
+| Alt+2               | One and Two                           |
+| Alt+3               | One and Three                         |
+| Alt+4               | Two and Two                           |
+| Alt+5               | Two and Three                         |
+| Alt+6               | Three and Three                       |
+
+Table 3.8: Shortcuts for the various viewing options
 
 4 Seg3D Windows
 =============
@@ -411,8 +421,8 @@ The layer manager window is the last of the three windows that open by default u
 
 A volume file is represented by a gray image with multiple stacked planes. A label mask is represented by a colored icon with a white mask in the middle. The colors correspond to the label masks seen in the viewer windows. Names of label masks are, by default, a conglomeration of the tools applied to the original volume. For example, in the image <a href="#LayerWindow">Figure 4.3</a> five label masks have been created from the volume file ’`2yo_Imp_labels`.’ The uppermost mask (in yellow) has the name ’`Threshold4.5TO5_2yo_Imp_labels`.’ This name was generated because the threshold tool, with values between 4.5 and 5, was applied to the original volume file. If another tool were to be applied on the yellow mask, the new mask would state the name of the tool, followed by the complete name of the yellow label mask. Names of masks can be manually changed by clicking the current name and typing in the desired text.
 
-| <span>**Icon**</span> | <span>**Function**</span> <id="#tablayericons">                                             |
-|:----------------------|:--------------------------------------------------------------------------------------------|
+| **Icon** | **Function** <a name="layericons"></a> |
+|:----|:----|
 |![alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)          | Visible Icon: The eye icon displays the current mask. When the eye is highlighted the mask is visible in the view plane, when it is not, the mask is ’turned off.’|
 |![alt text](Seg3DBasicFunctionality_figures/InfoOff.png)             | Info Icon: The ’i’ icon displays information about the layer.|
 |![alt text](Seg3DBasicFunctionality_figures/OpacityOff.png)          | Opacity Icon: The histogram-looking icon allows the user to change opacity levels of the layer.|
@@ -423,24 +433,30 @@ A volume file is represented by a gray image with multiple stacked planes. A lab
 |![alt text](Seg3DBasicFunctionality_figures/IsosurfaceDeleteOff.png) | IsosurfaceDelete Icon: This icon deletes active isosurfaces (if the mask has one).|
 |                                                                     | Shift+Left Button Drag Layer: This moves a layer from one group to another with resampling.|
 
-Each volume or mask label has standard, associated icons below their names. Table \[tab:layericons\] displays and describes each of these icons. These icons represent tools that are available for each individual layer.
+Table 4.1: List of icons and actions available for each layer.
 
-| <span>**Icon**</span>                                                | <span>**Function**</span> <id="#tablayertopicons">                                 |
-|:---------------------------------------------------------------------|:-----------------------------------------------------------------------------------|
+Each volume or mask label has standard, associated icons below their names. [Table 4.1](#layericons) displays and describes each of these icons. These icons represent tools that are available for each individual layer.
+
+| **Icon**| **Function** <a name="layertopicons"></a> |
+|:----|:----|
 |![alt text](Seg3DBasicFunctionality_figures/DownArrow.png)            | Expanded Layer Group Icon: This icon indicates that the layer group is visible, showing all the layers in it. The layer group can be collapsed, and expanded again by clicking on this icon. This turns into a right arrow when collapsed.|
 |![alt text](Seg3DBasicFunctionality_figures/VisibleOff.png)           | Visible Icon: This icon will toggle the visibility of all the layers in the group. If some of the layers are not visible, this icon will make those layers visible so that all the layers are visible. If all layers are visible, this will turn off visibility.|
 |![alt text](Seg3DBasicFunctionality_figures/IsosurfaceVisibleOff.png) | Isosurface Visibile Icon: This icon toggles visibility of all computed isosurfaces in the layer group. If there are computed isosurfaces that are not visible, this icon will make those visible. If all computed Isosurfaces are visible, this will hide them all.|
 
+Table 4.2: List of icons and actions available at the top of each layer group.
+
 Layers in Seg3D are arranged into layer groups. Layer groups are formed with layers that have the same geometric information, that is the same origin, spacing, and size. Groups are separated by panels with an orange header. Generally speaking, most tools and filters requiring more than one input can only operate on layers in the same group (and therefore the same grid geometry).
 
-| <span>**Icon**</span> | <span>**Function**</span> <id="#tablayerbottomicons">                         |
-|:----------------------|:------------------------------------------------------------------------------|
+| **Icon** | **Function** <a name="layerbottomicons"></a> |
+|:----|:----|
 |![alt text](Seg3DBasicFunctionality_figures/DuplicateOff.png)     | Duplicate Layer Icon: This icon allows the user to duplicate one or more layers. Once this icon is clicked, the user will be prompted to choose the layers to duplicate by checking the boxes next to the layers. The duplicated layers will have the same name with “copy” appended to the front.|
 |![alt text](Seg3DBasicFunctionality_figures/IsosurfaceMenuOff.png)| Isosurface Menu Icon: This icon will open a menu that allows the user to change some of the isosurface rendering parameters for all the isosurfaces in the layer group. These parameters are the quality and capping of the isosurface.|
 |![alt text](Seg3DBasicFunctionality_figures/Minus.png)            | Delete Layer Icon: This icon allows the user to delete one or more layer from the layer group. When the icon is clicked, the user will be prompted to choose the layers to delete by clicking the box next to the layer. There will be a confirmation window after the selection is made.|
 |![alt text](Seg3DBasicFunctionality_figures/Add.png)              | New Layer Icon: This icon will create a new mask layer that is the same size as those in the layer group but will be empty.|
 
-There are some functions that are operated as a group. These are indicated by the icons on the top of the pane, in the orange bar (Shown in Tablle \[tab:layertopicons\]). Additionally, there are some other icons at the bottom of the group that control some of the group functions (Table \[tab:layerbottomicons\]). Hovering the cursor over the icon will display the the use of each additional icon.
+Table 4.3: List of icons and actions available at the bottom of each layer group.
+
+There are some functions that are operated as a group. These are indicated by the icons on the top of the pane, in the orange bar (Shown in [Table 4.2](#layertopicons)). Additionally, there are some other icons at the bottom of the group that control some of the group functions ([Table 4.3](#layerbottomicons)). Hovering the cursor over the icon will display the the use of each additional icon.
 
 4.4 Volume View Window
 ----------------------
@@ -587,7 +603,7 @@ The Python Window opens a Python scripting console that can be used by advanced 
 4.8 Message History Window
 --------------------------
 
-The Message History Window is not opened by default when Seg3D is opened. This window is opened by clicking on the message history icon in the bottom left of the screen in the tool bar (Table \[tab:toolbaricons\]). This window will show the messages that Seg3D displays when many functions are performed. This can be used to track your steps at a high level.
+The Message History Window is not opened by default when Seg3D is opened. This window is opened by clicking on the message history icon in the bottom left of the screen in the tool bar ([Table 3.7](#toolbaricons)). This window will show the messages that Seg3D displays when many functions are performed. This can be used to track your steps at a high level.
 
 5 Basic Program Functions
 =========================
@@ -802,10 +818,12 @@ The user can choose which measurements are visible, change the color, name, and 
 
 Back in the general tab, the active layer can be deleted and the opacity of the visualizations in the viewers can be adjusted. Both tabs allow switching between pixel (indexed) and actual (geometric) distances. When this is changed in the active measurement tab, it changes all the measurements.
 
-| <span>**Action**</span> | <span>**Function**</span> <id="#tabmeasurekey">|
-|:------------------------|:-----------------------------------------------|
+| **Action** | **Function** <a name="measurekey"></a> |
+|:----|:----|
 | CTRL/CMD                | snap to axis                                   |
 | middle mouse buttom     | snap to slice                                  |
+
+Table 6.1: List of keyboard and mouse actions in the for the Measure Tool
 
 ### 6.1.6 Paint Brush
 
@@ -819,8 +837,8 @@ There is a flood fill and erase function which will fill an area in the slice th
 
 It should be noted that since this tool uses the scroll function to change the paint brush size, it will not also change the slice in the viewer. To change the slice use the arrow up/down or Shift+scroll.
 
-| <span>**Action**</span> | <span>**Function**</span> <id="#tabpaintkey">|
-|:------------------------|:---------------------------------------------|
+| **Action** | **Function** <a name="paintkey"></a>|
+|:----|:----|
 | left mouse              | paint                                        |
 | right mouse             | erase                                        |
 | scroll up/down          | increase/decrease brush size                 |
@@ -829,6 +847,8 @@ It should be noted that since this tool uses the scroll function to change the p
 | C                       | clear seed points                            |
 | F                       | Paint flood fill                             |
 | E                       | Erase flood fill                             |
+
+Table 6.2: List of keyboard and mouse actions in the for the Paint Brush Tool
 
 ### 6.1.7 Select Points
 
@@ -854,13 +874,15 @@ The polyline is created by clicking with the left mouse on the 2D viewer. The po
 
 Once the desired region is designated by the polyline, the user can fill the area or delete the mask data in the area. This tools then is like the paint brush tool, where the brush can be shape in any way. The polyline will remain as the slice changes, so that the user can modify the existing polyline instead of creating a new one. If desired, a new polyline can be created by clearing the polyline and starting fresh.
 
-| <span>**Action**</span> | <span>**Function**</span> <id="#tabpolylinekey">|
-|:------------------------|:------------------------------------------------|
+| **Action** | **Function** <a name="polylinekey"></a> |
+|:----|:----|
 | left mouse              | add or move point                               |
 | right mouse             | erase point                                     |
 | Shift+left mouse        | move polyline (on one of the points)            |
 | F                       | Paint flood fill                                |
 | E                       | Erase flood fill                                |
+
+Table 6.3: List of keyboard and mouse actions in the for the Polyline Tool
 
 ### 6.1.11 Resample
 
@@ -884,13 +906,15 @@ It should be noted that if the active slice changes, the points will not change,
 
 
 
-| <span>**Action**</span> | <span>**Function**</span> <id="#tabspeedlinekey">|
-|:------------------------|:-------------------------------------------------|
+| **Action** | **Function** <a name="speedlinekey"></a> |
+|:----|:----|
 | left mouse              | add or move point                                |
 | right mouse             | erase point                                      |
 | F                       | Paint flood fill                                 |
 | E                       | Erase flood fill                                 |
 | C                       | Clear seed points                                |
+
+Table 6.4: List of keyboard and mouse actions in the for the Speedline Tool
 
 ### 6.1.13 Threshold
 
@@ -900,9 +924,11 @@ The threshold range can be set in two ways: the slider provided in the tool wind
 
 Using the threshold tool can provide a very good rough segmentation of the region of interest, but may require some editing. The paint brush and polyline tools are manual ways to remove excess regions in the mask, but the user should also try other mask filters such as connected component and connected component size (and another threshold) to remove stray regions of selected noise.
 
-| <span>**Action**</span> | <span>**Function**</span> <id="#tabthresholdkey">|
-|:------------------------|:-------------------------------------------------|
+| **Action** | **Function** <a name="thresholdkey"></a> |
+|:----|:----|
 | M                       | toggle visibility of the preview mask            |
+
+Table 6.5: List of keyboard and mouse actions in the for the threshold Tool
 
 ### 6.1.14 Transform
 
