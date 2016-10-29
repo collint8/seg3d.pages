@@ -21,7 +21,7 @@ Contents
 ..[3.1 Controlling Windows](#controlling-windows)  
 ..[3.2 Viewer Panels](#viewer-panels)  
 ....[3.2.1 2D Slice Viewer](#d-slice-viewer)  
-....[3.2.2 3D Volume Viewer](#d-volume-viewer1)  
+....[3.2.2 3D Volume Viewer](#d-volume-viewer)  
 ..[3.3 Tool Bar](#tool-bar)  
 ..[3.4 Viewing Options](#viewing-options)  
 ....[3.4.1 Full Screen](#full-screen)  
@@ -214,7 +214,7 @@ As seen in <a href="#blank">Figure 3.1</a>, there are a number of viewer panels 
 
 ### 3.2.1 2D Slice Viewer
 
-Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer (Table \[tab:2dicons\]).
+Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer (Table [THIS ONE](#2dicons)).
 
 | <span>**Mouse Command**</span> | <span>**Function**<a name="tab2dmouse"></a></span>                              |
 |:-------------------------------|:-------------------------------------------------------------------------|
@@ -223,8 +223,9 @@ Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the
 | CMD/CTRL+right button          | Move slices in other planes to intersect at cursor. Viewers must have the picking icon enabled (Table \[tab:2dicons\]).      |
 | Shift+left button drag         | Pan view         |
 | Shift+right button drag        | Zoom view in/out       |
+[Table caption][pleasework]
 
-| <span>**Keyboard Action**</span> | <span>**Function**</span>                   |
+| <span>**Keyboard Action**</span> | <span>**Function**</span>          |
 |:---------------------------------|:------------------------------------------------------------|
 | up arrow,&gt;                    | move up one slice              |
 | down arrow,&lt;                  | move down one slice                  |
@@ -236,9 +237,10 @@ Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the
 | P                                | Toggle picking state                                        |
 | T                                | Toggle overlay visibility                                   |
 | L                                | Toggle lock viewer (to other locked views of the same type) |
-[this is a table.]
 
-| <span>**Icon**</span>                                          | <span>**Function**</span> <id="#tab2dicons">|
+Table: I saw this too.
+
+| <span>**Icon**</span>                                          | <span>**Function**</span> <a name="tab2dicons"></a>|
 |:---------------------------------------------------------------|:---------------------------------------------------------------------------------|
 |![alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)    | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
 |![alt text](Seg3DBasicFunctionality_figures/LockOff.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
@@ -249,6 +251,7 @@ Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the
 |![alt text](Seg3DBasicFunctionality_figures/FlipVertOff.png)    | Flip Vertical Icon: This icon will vertically flip the visualization of the slices in the viewer.|
 |![alt text](Seg3DBasicFunctionality_figures/OverlayOff.png)     | Overlay Icon: This icon will toggle the visibility of the overlay on the viewer. This will allow unobstructed viewing of the slices.|
 |![alt text](Seg3DBasicFunctionality_figures/PickingLinesOff.png)| Picking Lines Icon: This icon toggles the visibility of the picking lines (shows other slices) in the viewing panel.|
+[why not]
 
 ### 3.2.2 3D Volume Viewer
 
