@@ -214,7 +214,7 @@ As seen in <a href="#blank">Figure 3.1</a>, there are a number of viewer panels 
 
 ### 3.2.1 2D Slice Viewer
 
-Tables <a href="#tab2dmouse">asdf</a> & <a href="#tab2dkey">asdf</a> show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer (Table [THIS ONE](#tab2dicons)).
+Tables <a href="#tab2dmouse">3.1</a> & [3.2](#2dkey) show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer ([Table 3.3](#tab2dicons)).
 
 | **Mouse Command** | **Function**<a name="tab2dmouse"></a>                              |
 |:----|:----|
@@ -241,7 +241,7 @@ Table 3.1: List of mouse functions in the 2D viewers.
 
 Table 3.2: List of keyboard actions in the 2D viewers.
 
-| **Icon**                                          | **Function** <a name="tab2dicons"></a>|
+| **Icon** | **Function** <a name="tab2dicons"></a>|
 |:----|:----|
 |![alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)    | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
 |![alt text](Seg3DBasicFunctionality_figures/LockOff.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
