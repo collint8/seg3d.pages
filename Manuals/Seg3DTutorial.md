@@ -7,39 +7,39 @@ layout: default
 Contents
 =======
 [1 Overview](#overview)  
-[.1.1 Software Requirements](#software-requirements)  
-[..1.1.1 Seg3D](#seg3d)  
-[..1.1.2 Required Datasets](#required-datasets)  
+[..1.1 Software Requirements](#software-requirements)  
+[....1.1.1 Seg3D](#seg3d)  
+[....1.1.2 Required Datasets](#required-datasets)  
 [2 Basic Orientation](#basic-orientation)  
-[.2.1 Starting Seg3D](#starting-seg3d)  
-[.2.2 Loading A Dataset](#loading-a-dataset)  
-[.2.3 Navigation](#navigation)  
-[.2.4 Changing Views](#changing-views)  
-[.2.5 Loading a Second Dataset](#loading-a-second-dataset)  
+[..2.1 Starting Seg3D](#starting-seg3d)  
+[..2.2 Loading A Dataset](#loading-a-dataset)  
+[..2.3 Navigation](#navigation)  
+[..2.4 Changing Views](#changing-views)  
+[..2.5 Loading a Second Dataset](#loading-a-second-dataset)  
 [3 Simple Operator Based Segmentation Strategies](#simple-operator-based-segmentation-strategies)  
-[.3.1 DEMRI Dataset](#demri-dataset)  
-[.3.2 Label Masks](#label-masks)  
-[.3.3 Paint Tool](#paint-tool)  
-[.3.4 Polyline Tool](#polyline-tool)  
-[.3.5 Logical Operators](#logical-operators)  
-[.3.6 Isosurface](#isosurface)  
-[.3.7 Mask Data](#mask-data)  
-[.3.8 Saving](#saving)  
+[..3.1 DEMRI Dataset](#demri-dataset)  
+[..3.2 Label Masks](#label-masks)  
+[..3.3 Paint Tool](#paint-tool)  
+[..3.4 Polyline Tool](#polyline-tool)  
+[..3.5 Logical Operators](#logical-operators)  
+[..3.6 Isosurface](#isosurface)  
+[..3.7 Mask Data](#mask-data)  
+[..3.8 Saving](#saving)  
 [4 Filters and Threshold Tool](#filters-and-threshold-tool)  
-[.4.1 Loading Angiogram](#loading-angiogram)  
-[.4.2 Filtering data](#filtering-data)  
-[.4.3 Threshold Tool](#threshold-tool)  
-[.4.4 Otsu Threshold](#otsu-threshold)  
-[.4.5 Canny Edge Detection Filter](#canny-edge-detection-filter)  
-[..4.5.1 Canny Edge Detection With Mean Filter](#canny-edge-detection-with-mean-filter)  
+[..4.1 Loading Angiogram](#loading-angiogram)  
+[..4.2 Filtering data](#filtering-data)  
+[..4.3 Threshold Tool](#threshold-tool)  
+[..4.4 Otsu Threshold](#otsu-threshold)  
+[..4.5 Canny Edge Detection Filter](#canny-edge-detection-filter)  
+[....4.5.1 Canny Edge Detection With Mean Filter](#canny-edge-detection-with-mean-filter)  
 [5 Speedline Tool](#speedline-tool)  
-[.5.1 Speedline Tool Segmentation](#speedline-tool-segmentation)  
+[..5.1 Speedline Tool Segmentation](#speedline-tool-segmentation)  
 [6 Segmenting a Brain Dataset](#segmenting-a-brain-dataset)  
-[.6.1 Loading Datasets](#loading-datasets)  
-[.6.2 Neighborhood Connected](#neighborhood-connected)  
-[.6.3 Filtering MRI Data](#filtering-mri-data)  
-[.6.4 Masking out Brain](#masking-out-brain)  
-[.6.5 Thresholding Grayand White Matter](#thresholding-gray-and-white-matter)  
+[..6.1 Loading Datasets](#loading-datasets)  
+[..6.2 Neighborhood Connected](#neighborhood-connected)  
+[..6.3 Filtering MRI Data](#filtering-mri-data)  
+[..6.4 Masking out Brain](#masking-out-brain)  
+[..6.5 Thresholding Grayand White Matter](#thresholding-gray-and-white-matter)  
 [7 Conclusion](#conclusion)  
 
 1 Overview
@@ -83,7 +83,7 @@ Seg3D handles your data mainly in the form of projects which are similar to thos
 In order to get a good feel for the Seg3D program, one needs to load a dataset. Please open up the file menu and select the <span>**Import Layer From Single File...**</span> menu item as indicated in [Figure 2.2](#LoadVolume). This opens up a file browser. Browse to the Heart\_DataSet directory and select this one to load the DEMRI.NRRD file.
 
 <figure>
-  <img src="Seg3DTutorial_figures/LoadVolume.png" id="#oadVolume">
+  <img src="Seg3DTutorial_figures/LoadVolume.png" id="#LoadVolume">
   <figcaption>Figure 2.2 Loading a volume.</figcaption>
 </figure>
 
@@ -225,7 +225,7 @@ Prepare to segment by clicking on the + widget under DEMRI on the Layer Menu to 
 
 The Polyline Tool may be better suited for segmentation of complex shapes. The polyline tool is operated by selecting points, with the left mouse button, around the perimeter of the region of interest. Each point added is connected to the point before it and to the first point selected making a closed polygon. Both tools display the selected regions of interest in label masks.
 
-Open the Polyline Tool under the Tools menu on the menu bar. Without changing the label mask, begin clicking points around the superficial surface of the <span>**Ascending Aorta**</span> ([Figure 3.3](#polylinesuperficial)). If you are not satisfied with the location of a point you can move it by moving your cursor over the point, when the cursor turns into a had or a thicker cross, you may move the point by left clicking on it and dragging it to the desired location. Or, you can simply delete the point by right clicking on the point when when the cursor changes. The polyline tool will automatically try to place the point in the order that completes the smoothest shape, so when your are outlining a concave shape, make a convex shape, then add more points to make it concave. Once you have traced the superficial surface all the way around click fill on the Tool Menu, or simply press F on the keyboard. The region surrounded by the polyline should fill with the color of the selected label mask. Navigate to the next slice, and notice that the polyline does not disappear. If the polyline still matches the region of interest, simply hit F. To adjust the polyline hold shift cand left click on one point and drag to move the entire polyline, or move individual points as described before. If you want to start over hit Clear Polyline button in the tool options on the left. It is also possible to erase regions of the label mask with the Polyline tool by creating a polyline around the region to be erased and selecting erase on the Tool Menu. After creating the superficial surface label masks hide the masks by clicking on the eye widget, select the lumen label mask, and use the Polyline tool to create lumen masks on the <span>**Ascending Aorta**</span> (Figure [3.2](#polylinelumen)).
+Open the Polyline Tool under the Tools menu on the menu bar. Without changing the label mask, begin clicking points around the superficial surface of the <span>**Ascending Aorta**</span> ([Figure 3.3](#polylinesuperficial)). If you are not satisfied with the location of a point you can move it by moving your cursor over the point, when the cursor turns into a had or a thicker cross, you may move the point by left clicking on it and dragging it to the desired location. Or, you can simply delete the point by right clicking on the point when when the cursor changes. The polyline tool will automatically try to place the point in the order that completes the smoothest shape, so when your are outlining a concave shape, make a convex shape, then add more points to make it concave. Once you have traced the superficial surface all the way around click fill on the Tool Menu, or simply press F on the keyboard. The region surrounded by the polyline should fill with the color of the selected label mask. Navigate to the next slice, and notice that the polyline does not disappear. If the polyline still matches the region of interest, simply hit F. To adjust the polyline hold shift cand left click on one point and drag to move the entire polyline, or move individual points as described before. If you want to start over hit Clear Polyline button in the tool options on the left. It is also possible to erase regions of the label mask with the Polyline tool by creating a polyline around the region to be erased and selecting erase on the Tool Menu. After creating the superficial surface label masks hide the masks by clicking on the eye widget, select the lumen label mask, and use the Polyline tool to create lumen masks on the <span>**Ascending Aorta**</span> ([Figure 3.2](#polylinelumen)).
 
 <figure>
   <img src="Seg3DTutorial_figures/logicaloperators.png" id="logicaloperators">
@@ -235,7 +235,7 @@ Open the Polyline Tool under the Tools menu on the menu bar. Without changing th
 3.5 Logical Operators
 -----------------
 
-Once you have masked the lumen and superficial surface of both the ascending and descending aorta we can use logical operators to mask the real region of interest, the aorta wall. Under Mask Filters on the menu bar, select Boolean Xor. Highlight either of the label masks. You will notice that the name of the highlighted filter will appear in the target layer field. You can change this by unchecking the ‘Always use active layer’ option. Choose the other label mask in the Mask Layer option by selecting it from the list of eligible layers, or by holding down shift and clicking on the face color image of desired layer and dragging it to the option list. Click on the Run Filter button, this will create a new label mask that only covers the aorta wall (Figures [3.4](#logicaloperators)). The resulting layer is shown in [Figure 3.5](#creatingisosurface). Notice there is an option called Replace on the bottom of the tool menu. Most of the filters have this option. It will replace the target layer with the result of the filter. This is very useful when you do not need the unmodified layer after you run the filter.
+Once you have masked the lumen and superficial surface of both the ascending and descending aorta we can use logical operators to mask the real region of interest, the aorta wall. Under Mask Filters on the menu bar, select Boolean Xor. Highlight either of the label masks. You will notice that the name of the highlighted filter will appear in the target layer field. You can change this by unchecking the ‘Always use active layer’ option. Choose the other label mask in the Mask Layer option by selecting it from the list of eligible layers, or by holding down shift and clicking on the face color image of desired layer and dragging it to the option list. Click on the Run Filter button, this will create a new label mask that only covers the aorta wall ([Figure 3.4](#logicaloperators)). The resulting layer is shown in [Figure 3.5](#creatingisosurface). Notice there is an option called Replace on the bottom of the tool menu. Most of the filters have this option. It will replace the target layer with the result of the filter. This is very useful when you do not need the unmodified layer after you run the filter.
 
 <figure>
   <img src="Seg3DTutorial_figures/creatingisosurface.png" id="creatingisosurface">

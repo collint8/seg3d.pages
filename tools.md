@@ -1,14 +1,38 @@
 ---
 layout: default
-title: Seg3d Tool Documentation
+title: Seg3d Tools
 category: info 
 ---
+
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementsByName(id)[0];
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+
+<style>
+div.hidden {
+    display: none;
+}
+</style>
+
+<a id="top"></a>
 
 # Seg3d Tools
 
 {% comment %}from https://gist.github.com/pepelsbey/9334494{% endcomment %}
 {% capture tmp %}
-{% for page in site.pages %}{% if page.category == "ToolDocs" %} {{ page.tool}} {% endif %}{% endfor %}
+  {% for page in site.pages %}
+    {% if page.category == "ToolDocs" %}
+      {{ page.tool }}
+    {% endif %}
+  {% endfor %}
 {% endcapture %}
 
 {% assign categories = tmp | split: ' ' %}
@@ -20,18 +44,20 @@ category: info
   {% endunless %}
 {% endfor %}
 
-{% assign toolcategories = tmp | split: ' ' %}
+{% assign modulecategories = tmp | split: ' ' %}
 
-{% capture toolpages %}
-  {% for cat in toolcategories %}?{{ cat }}
+{% capture modulepages %}
+  {% for cat in modulecategories %}
+    ?{{ cat }}
     {% for page in site.pages %}
-      {% if page.tool == cat %}${{ page.title }}#{{ page.url | prepend: site.github.url }}
+      {% if page.category == cat %}
+        ${{ page.title }}#{{ page.url }}
       {% endif %}
-    {% endfor%}
+    {% endfor %}
   {% endfor %}
 {% endcapture %}
 
-{% assign sortedpages = toolpages | strip | strip_newlines | split: '?' | sort %}
+{% assign sortedpages = modulepages | strip | strip_newlines | split: '?' | sort %}
 
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}
@@ -39,9 +65,16 @@ category: info
 ## {{ pageitems[0] }}
     {% for item in pageitems %}
       {% comment %}skip category list item (index 0){% endcomment %}
-      {% if forloop.first %} {% continue %} {% endif%}
+      {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
-**[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
+      {% assign contentId = linkitem[0] | prepend: 'id_' %}
+
+<h4><a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a></h4>
+      {% capture mdpath %}Tools/{{linkitem[0]}}.md{% endcapture %}
+      {% capture my-include %}{% include {{mdpath}} %}  {% endcapture %}
+      {% assign importantPart1 = my-include | split: 'Summary' %}
+      {% assign importantPart2 = importantPart1[1] %}
+<div class="hidden" markdown="1" name="{{contentId}}">{{ importantPart2  }} </div>
     {% endfor %}
   {% endif %}
 {% endfor %}

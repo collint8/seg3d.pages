@@ -101,9 +101,9 @@ Contents
 ....[6.2.4 Boolean XOR](#boolean-xor)  
 ....[6.2.5 Connected Component](#connected-component)  
 ....[6.2.6 Connected Component Size](#connected-component-size)  
-....[6.2.7 Fast Binary Dilate->Erode](#fast-binary-dilate---erode)  
+....[6.2.7 Fast Binary Dilate->Erode](#fast-binary-dilate-erode)  
 ....[6.2.8 Fill Holes](#fill-holes)  
-....[6.2.9 Smooth Binary Dilate->Erode](#smooth-binary-dilate---erode)  
+....[6.2.9 Smooth Binary Dilate->Erode](#smooth-binary-dilate-erode)  
 ..[6.3 Large Volume Tools](#large-volume-tools)  
 ....[6.3.1 Extract Data Layer](#extract-datalayer)  
 ..[6.4 Data Filters](#data-filters)  
@@ -157,7 +157,7 @@ Seg3D is distributed as a binary download for Linux, Windows, and OS X. Please v
 2 Welcome Screen
 ==============
 
-Anytime you start Seg3D, users are first presented with the Seg3D welcome screen. As seen in <a href="#welcome">Figure 2.1</a>, the welcome screen consists of the Seg3D splash screen and a menu displaying the available options for starting and continuing a segmentation in Seg3D. The included options are to load a recent project, open existing project, start a new project, quickly open a file for viewing, and to quit Seg3D. These options are the same as some of the options in the **File** menu which are explained in this chapter as well as Sec. [5.1](#file).
+Anytime you start Seg3D, users are first presented with the Seg3D welcome screen. As seen in <a href="#welcome">Figure 2.1</a>, the welcome screen consists of the Seg3D splash screen and a menu displaying the available options for starting and continuing a segmentation in Seg3D. The included options are to load a recent project, open existing project, start a new project, quickly open a file for viewing, and to quit Seg3D. These options are the same as some of the options in the **File** menu which are explained in this chapter as well as [Sec. 5.1](#file).
 
 <figure>
   <img src="Seg3DBasicFunctionality_figures/welcome_screen.png" id="welcome">
@@ -172,17 +172,17 @@ This option allows the users to quickly open a project recently opened in Seg3D.
 2.2 Open Existing Project
 -------------------------
 
-This option is the same as the **File** ⇒ **Open Project** (Section [5.1.2](#open-project)) menu item. It will open a dialogue window to allow the user to choose an existing *\*.s3d* or *\*.seg3dproj* file to load into Seg3D.
+This option is the same as the **File** ⇒ **Open Project** ([Section 5.1.2](#open-project)) menu item. It will open a dialogue window to allow the user to choose an existing *\*.s3d* or *\*.seg3dproj* file to load into Seg3D.
 
 2.3 Start New Project
 ---------------------
 
-This option is the same as the **File** ⇒ **New Project** (Section [5.1.1](#new-project)) menu item. It will display the New Project Wizard (<a href="#newproject">Figure 5.1</a>), allowing the user to choose a project name and location so that the project can be saved easily and automatically.
+This option is the same as the **File** ⇒ **New Project** ([Section 5.1.1](#new-project)) menu item. It will display the New Project Wizard (<a href="#newproject">Figure 5.1</a>), allowing the user to choose a project name and location so that the project can be saved easily and automatically.
 
 2.4 Quick Open File
 -------------------
 
-This option is the same as the **File** ⇒ **Import Layer From Single File...** (Section [5.1.7](#import-layer-from-single-file)) menu item. You may choose a file to load into Seg3D for viewing. All of the filters and tools will be available, but the project can not be saved automatically until a project name is created by using the **File** ⇒ **Save Project As** menu item (Section [5.1.5](#save-project-as)).
+This option is the same as the **File** ⇒ **Import Layer From Single File...** ([Section 5.1.7](#import-layer-from-single-file)) menu item. You may choose a file to load into Seg3D for viewing. All of the filters and tools will be available, but the project can not be saved automatically until a project name is created by using the **File** ⇒ **Save Project As** menu item ([Section 5.1.5](#save-project-as)).
 This option does not allow the opening of image stacks.
 
 2.5 Quit
@@ -210,11 +210,11 @@ The windows on docked the side of the screen can be any of five windows explaine
 3.2 Viewer Panels
 -----------------
 
-As seen in <a href="#blank">Figure 3.1</a>, there are a number of viewer panels in Seg3D, though the exact number can be set (see Section [3.4](#viewing-options)). Each of these viewer windows can be changed in size and in type. The type options are: volume, axial, sagittal, and coronal. The names of the 2D planes can be changed by the user in preferences (Sec. [5.4](#preferences)). You can change the view of each pane by clicking on the view name and choosing the view to change it too. This is a drop down menu, so you can scroll over the name and the view will also change. There are also shortcuts to change views (V–Volume, X–Sagittal, Y–Coronal, and Z–Axial). There are several icons in each view panel, as well as mouse and keyboard shortcuts. The controls for each of the 2D viewers will be described below, as will the controls for the 3D volume viewer.
+As seen in <a href="#blank">Figure 3.1</a>, there are a number of viewer panels in Seg3D, though the exact number can be set (see [Section 3.4](#viewing-options)). Each of these viewer windows can be changed in size and in type. The type options are: volume, axial, sagittal, and coronal. The names of the 2D planes can be changed by the user in preferences ([Sec. 5.4](#preferences)). You can change the view of each pane by clicking on the view name and choosing the view to change it too. This is a drop down menu, so you can scroll over the name and the view will also change. There are also shortcuts to change views (V–Volume, X–Sagittal, Y–Coronal, and Z–Axial). There are several icons in each view panel, as well as mouse and keyboard shortcuts. The controls for each of the 2D viewers will be described below, as will the controls for the 3D volume viewer.
 
 ### 3.2.1 2D Slice Viewer
 
-Tables <a href="#tab2dmouse">3.1</a> & [3.2](#2dkey) show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer ([Table 3.3](#tab2dicons)).
+Tables <a href="#tab2dmouse">3.1</a> & [3.2](#2dkey) show the mouse and keyboard actions which can be used to control the visualization and manipulation of image and segmentation data. Though these functions are general, there are tools which used these functions for specify purposes or may otherwise block a couple of these functions, the most prominent example is the scroll wheel in the paint brush tool is used to change brush size. In this case, you can still scroll through slices by holding Shift. In all cases, an alternative is given in the software. Also presented in this section is a list and description of the icons presented in the 2D slice viewer ([Table 3.3](#2dicons)).
 
 | **Mouse Command** | **Function**<a name="tab2dmouse"></a>                              |
 |:----|:----|
@@ -241,7 +241,7 @@ Table 3.1: List of mouse functions in the 2D viewers.
 
 Table 3.2: List of keyboard actions in the 2D viewers.
 
-| **Icon** | **Function** <a name="tab2dicons"></a>|
+| **Icon** | **Function** <a name="2dicons"></a>|
 |:----|:----|
 |![alt text](Seg3DBasicFunctionality_figures/AutoViewOff.png)    | Autoview Icon: This icon forces the panel to fit the objects in viewer with maximum size.|
 |![alt text](Seg3DBasicFunctionality_figures/LockOff.png)        | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
@@ -282,12 +282,12 @@ Table 3.5: List of keyboard actions in the 3D volume viewer
 |![alt text](Seg3DBasicFunctionality_figures/LockOff.png)                  | Lock View Icon: This icon toggles the viewer lock on the panel (shortcut: L). Any changes to any locked viewers will change all the views. Viewers must be the same type and each must be locked to use this funtion.|
 |![alt text](Seg3DBasicFunctionality_figures/AlignOff.png)                 | Snap to Axis Icon: This icon will move the scene so that the viewing angle is aligned with the nearest axis. This will effectively “straighten” the scene.|
 |![alt text](Seg3DBasicFunctionality_figures/LightOff.png)                 | Lighting Icon: This icon toggles the lighting in the 3D viewer. With the lighting disable, the images will be shaded as if they were flat, i.e., no shading.|
-|![alt text](Seg3DBasicFunctionality_figures/FogOff.png)                   | Depth Cue Icon: This icon toggles the depth cue for the 3d viewer. This depth cue acts as fog, blending objects further from the camera into the background. Fog parameters can be changed in the volume view window (Sec. [4.4.1](#fog-panel)).|
-|![alt text](Seg3DBasicFunctionality_figures/ClipOff.png)                  | Clipping Icon: This icon toggles the viewing of the clipping planes in the 3D viewer. Clipping planes must be created before they can be seen in the volume viewer (Sec. [4.4.2](#clipping-planes-panel)). |
+|![alt text](Seg3DBasicFunctionality_figures/FogOff.png)                   | Depth Cue Icon: This icon toggles the depth cue for the 3d viewer. This depth cue acts as fog, blending objects further from the camera into the background. Fog parameters can be changed in the volume view window ([Sec. 4.4.1](#fog-panel)).|
+|![alt text](Seg3DBasicFunctionality_figures/ClipOff.png)                  | Clipping Icon: This icon toggles the viewing of the clipping planes in the 3D viewer. Clipping planes must be created before they can be seen in the volume viewer ([Sec. 4.4.2](#clipping-planes-panel)). |
 |![alt text](Seg3DBasicFunctionality_figures/IsosurfaceVisibleOff.png)     | Isosurface Visibility Icon: This icon toggles visibility of the isosurfaces in the 3D viewer. This functions effects all the isosurfaces are declared visible in the layer manager. |
 |![alt text](Seg3DBasicFunctionality_figures/SlicesVisibleOff.png)         | Slice Visibility Icon: This icon toggles visibility of the slices in the 3D viewer.|
 |![alt text](Seg3DBasicFunctionality_figures/InvisibleSlicesVisibleOff.png)| Invisible Slice Visibility Icon: This icon toggles visibility of the invisible slices in the 3D viewer. Invisible slices are left when 2D viewers are destroyed. |
-|![alt text](Seg3DBasicFunctionality_figures/VolumeRenderingOff.png)       | Volume Rendering Visibility Icon: This icon toggles visibility of the Volume Rendering in the 3D viewer. Volume Rendering must first be created in the Volume View window (Sec. [4.4.3](#volume-rendering-panel))|
+|![alt text](Seg3DBasicFunctionality_figures/VolumeRenderingOff.png)       | Volume Rendering Visibility Icon: This icon toggles visibility of the Volume Rendering in the 3D viewer. Volume Rendering must first be created in the Volume View window ([Sec. 4.4.3](#volume-rendering-panel))|
 |![alt text](Seg3DBasicFunctionality_figures/VolumeVisibleOff.png)         | Volume visibility Icon: This icon toggles visibility of the borders of the active layer in the 3D viewer.                                                            |
 |![alt text](Seg3DBasicFunctionality_figures/OverlayOff.png)               | Overlay Icon: This icon will toggle the visibility of the overlay on the viewer. This will allow unobstructed viewing of the scene.                     |
 
@@ -377,7 +377,7 @@ Table 3.8: Shortcuts for the various viewing options
 4 Seg3D Windows
 =============
 
-In addition to the viewer windows discussed in the above chapter, there are several other windows involved in streamlining the user interface of the Seg3D software. Each of these windows can be accessed through the ’Window’ drop-down menu. By default these windows appear in certain positions defined below, but each can be undocked from the Seg3D interface and either left as stand alone windows or repositioned elsewhere on the Seg3D application (see Sec. [3.1](#controlling-windows)).
+In addition to the viewer windows discussed in the above chapter, there are several other windows involved in streamlining the user interface of the Seg3D software. Each of these windows can be accessed through the ’Window’ drop-down menu. By default these windows appear in certain positions defined below, but each can be undocked from the Seg3D interface and either left as stand alone windows or repositioned elsewhere on the Seg3D application (see [Sec. 3.1](#controlling-windows)).
 
 4.1 Project Window
 ------------------
@@ -672,10 +672,10 @@ Label maps can be exported in a variety of file formats. If a layer containing a
 
 This window allows the user to select the layers to export as label masks and the format they wish to export. The available formats include: .nrrd, .mat (matlab), .tiff, .bmp, .png, .dcm. This function can be called using the shortcut CTRL/CMD+E. The segmentation may be saved as a single file or as multiple files.
 
-After choosing a file name (single file only) and location for the segmentation, you will be shown the Export to Segmentation Summary. This window shows the layers chosen to save as a segmentation. In the case of saving as a single file, there is an additional layer (the background, which is the remainder of the volume) and an option to choose the value to represent each of the layers (<a href="#ExportSeg\_2">Figure 5.4</a>). I should be noted that the segmentation will only represent one value per voxel, so if any of the selected layers overlap the higher value will overwrite the region of overlap. If saving as multiple files, this window will show the names of the layers only.
+After choosing a file name (single file only) and location for the segmentation, you will be shown the Export to Segmentation Summary. This window shows the layers chosen to save as a segmentation. In the case of saving as a single file, there is an additional layer (the background, which is the remainder of the volume) and an option to choose the value to represent each of the layers (<a href="#ExportSeg2">Figure 5.4</a>). I should be noted that the segmentation will only represent one value per voxel, so if any of the selected layers overlap the higher value will overwrite the region of overlap. If saving as multiple files, this window will show the names of the layers only.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/ExportSeg_2.png" id="ExportSeg_2">
+  <img src="Seg3DBasicFunctionality_figures/ExportSeg_2.png" id="ExportSeg2">
   <figcaption>Figure 5.4 This window appears when the user selects export segmentation and a file is chosen.  This allows the users to choose the labels to use for each material.</figcaption>
 </figure>
 
@@ -784,7 +784,7 @@ The tools in this section are useful functions in formatting and segmenting data
 
 ### 6.1.1 Copy/Paste
 
-This tool uses only mask layers as inputs. It is used to modify mask layers to repeat a slice of interest. This tool is similar to the basic features found in Sec. [5.2.3](#copy-mask-slice)–[5.2.4](#paste-mask-slice). The key difference between the edit functions and this tool is that this tool provides more flexibility with the pasting options, offering pasting anywhere from one slice to the whole volume. The editing options only offer the extremes of pasting a single slice (Sec. [5.2.4](#paste-mask-slice)) or punching a copied slice through the whole volume (Sec. [5.2.5](#punch-through-volume)). This tool is most useful to paste multiple slices, but not necessarily the entire volume.
+This tool uses only mask layers as inputs. It is used to modify mask layers to repeat a slice of interest. This tool is similar to the basic features found in Sec. [5.2.3](#copy-mask-slice)–[5.2.4](#paste-mask-slice). The key difference between the edit functions and this tool is that this tool provides more flexibility with the pasting options, offering pasting anywhere from one slice to the whole volume. The editing options only offer the extremes of pasting a single slice ([Sec. 5.2.4](#paste-mask-slice)) or punching a copied slice through the whole volume ([Sec. 5.2.5](#punch-through-volume)). This tool is most useful to paste multiple slices, but not necessarily the entire volume.
 
 The Copy/Paste tool has two functions, copy and paste. The copy buffer only saves one copied slice at a time. This means that only one slice can be pasted, though it can be pasted to many slices. The slice to be copied can be specified in two ways, from the viewer (when ‘use slice from active viewer’ is checked) or using a slider and specifying the direction (make sure ‘use slice from active viewer’ is uncheck). You should be careful using either option to make sure the correct plane is active/selected. To copy the slice, press the copy button near the middle of the tool window.
 
@@ -969,7 +969,7 @@ The seed points are chosen by left clicking in the 2D viewers or deleted by righ
 
 The connected component size filter is similar to the connected component filter, but will return a image data layer labeling each connected region with a data value corresponding to its size (logarithmic or linear scale). This allows the user to manipulate the connected regions in the volume based on size. For example, thresholding real data can yield several regions of interest that are correct maskings of the data, but may also capture small regions of noise in other areas of the scan. These small regions of noise can be eliminated using the connected component filter by using the threshold tool on the result.
 
-### 6.2.7 Fast Binary Dilate -&gt; Erode
+### 6.2.7 Fast Binary Dilate -&gt; Erode <a name="fast-binary-dilate-erode"></a>
 
 The fast binary dilate -&gt; erode filter will make a label mask bigger (dilate) or smaller (erode). This filter is very useful in smoothing a mask layer, as performing a dilation and erosion on a mask volume will fill in some of the details on the surface. This can be desirable if noise is the detail being filled in. The opposite (erode then dilate) will also smooth, but it will reduce protruding details in the volume. Either type smoothing should be done carefully as important details may be smoothed in addition to the noise of the segmentation. The amount of smoothing is directly proportional to radius of each step. The radii are controlled by the slider in the tool window.
 
@@ -983,7 +983,7 @@ This filter and smooth binary dilate -&gt; erode are similar in function, but ar
 
 The fill holes filter can be used to fill unmarked regions which are surrounded by a data in a mask layer. This is useful when automated segmentation techniques leave false negative noise, or regions that should have been marked but aren’t. This filter will only fill regions that are completely surrounded with mask data. Therefore, if the filter appears to not work at filter, check the holes and make sure they are not exposed to the background. The seed points can be used to if there is a hole that is on the edge, but the hole must not be the majority of the edge, i.e. the background. In this case the seeds are used to identify the background. Seed points are not needed otherwise.
 
-### 6.2.9 Smooth Binary Dilate -&gt; Erode
+### 6.2.9 Smooth Binary Dilate -&gt; Erode<a name="smooth-binary-dilate-erode"></a>
 
 The fast binary dilate -&gt; erode filter will make a label mask bigger (dilate) or smaller (erode). This filter is very useful in smoothing a mask layer, as performing a dilation and erosion on a mask volume will fill in some of the details on the surface. This can be desirable if noise is the detail being filled in. The opposite (erode then dilate) will also smooth, but it will reduce protruding details in the volume. Either type smoothing should be done carefully as important details may be smoothed in addition to the noise of the segmentation. The amount of smoothing is directly proportional to radius of each step. The radii are controlled by the slider in the tool window.
 
@@ -1066,7 +1066,7 @@ This filter is composed of four steps:
 
 4.  The hysteresis thresholding is applied to the gradient magnitude (multiplied with zero-crossings) of the smoothed image to find and link edges.
 
-There are two parameters for this filter, distance and minimum threshold. The distance parameter is the controls the gaussian blurring in the first step and is the same as in the gaussian blur filter (Sec [6.4.2](#gaussian-blur)). Higher distance will result in fewer edges detected and the edges that are detected will likely be thicker. This is because these edges are being blurred out. The minimum threshold parameter controls the hysteresis thresholding in the fourth step. This parameter will set the level of that will count as an edge or not. This means that a higher minimum threshold will have fewer edges in the result and the remaining edges while more likely be true edges.
+There are two parameters for this filter, distance and minimum threshold. The distance parameter is the controls the gaussian blurring in the first step and is the same as in the gaussian blur filter ([Sec 6.4.2](#gaussian-blur)). Higher distance will result in fewer edges detected and the edges that are detected will likely be thicker. This is because these edges are being blurred out. The minimum threshold parameter controls the hysteresis thresholding in the fourth step. This parameter will set the level of that will count as an edge or not. This means that a higher minimum threshold will have fewer edges in the result and the remaining edges while more likely be true edges.
 
 ### 6.5.2 Confidence Connected
 
