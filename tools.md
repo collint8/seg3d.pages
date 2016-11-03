@@ -51,7 +51,7 @@ div.hidden {
     ?{{ cat }}
     {% for page in site.pages %}
       {% if page.tool == cat %}
-        ${{ page.title }}#{{ page.url }}
+        ${{ page.title }}#{{ page.url | prepend: site.github.url }}
       {% endif %}
     {% endfor %}
   {% endfor %}
@@ -69,8 +69,8 @@ div.hidden {
       {% assign linkitem = item | split: '#' %}
       {% assign contentId = linkitem[0] | prepend: 'id_' %}
 
-<h4><a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a></h4>
-      {% capture mdpath %}Tools/{{linkitem[0]}}.md{% endcapture %}
+### <a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a>
+      {% capture mdpath %}{{linkitem[1]}}{% endcapture %}
       {% capture my-include %}{% include {{mdpath}} %}  {% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
       {% assign importantPart2 = importantPart1[1] %}
