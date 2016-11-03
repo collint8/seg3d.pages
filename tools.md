@@ -70,6 +70,7 @@ div.hidden {
       {% assign contentId = linkitem[0] | prepend: 'id_' %}
 
 ### <a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a>
+### {{ linkitem[0] }}
       {% capture mdpath %}{{linkitem[1]}}{% endcapture %}
       {% capture my-include %}{% include {{mdpath}} %}  {% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
