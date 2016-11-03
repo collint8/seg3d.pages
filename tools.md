@@ -62,15 +62,16 @@ div.hidden {
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}
   {% if pageitems[0] %}
-## {{ pageitems[0] }}
+<h2> {{ pageitems[0] }} </h2>
     {% for item in pageitems %}
+### {{item}}
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif %}
       {% assign linkitem = item | split: '#' %}
       {% assign contentId = linkitem[0] | prepend: 'id_' %}
 
-### <a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a>
-### {{ linkitem[0] }}
+<h3> {{ linkitem[0] }} </h3>
+<h3> <a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a></h3>
       {% capture mdpath %}{{linkitem[1]}}{% endcapture %}
       {% capture my-include %}{% include {{mdpath}} %}  {% endcapture %}
       {% assign importantPart1 = my-include | split: 'Summary' %}
