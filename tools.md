@@ -50,7 +50,7 @@ div.hidden {
   {% for cat in modulecategories %}
     ?{{ cat }}
     {% for page in site.pages %}
-      {% if page.category == cat %}
+      {% if page.tool == cat %}
         ${{ page.title }}#{{ page.url }}
       {% endif %}
     {% endfor %}
