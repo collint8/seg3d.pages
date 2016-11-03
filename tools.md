@@ -52,6 +52,7 @@ div.hidden {
     {% for page in site.pages %}
       {% if page.category == cat %}
         ${{ page.title }}#{{ page.url | prepend: site.github.url }}
+## {{ page.title }}
       {% endif %}
     {% endfor %}
   {% endfor %}
