@@ -1,38 +1,14 @@
 ---
 layout: default
-title: Seg3d Tools
+title: Seg3d Tool Documentation
 category: info 
 ---
-
-<script type="text/javascript">
-<!--
-    function toggle_visibility(id) {
-       var e = document.getElementsByName(id)[0];
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
-//-->
-</script>
-
-<style>
-div.hidden {
-    display: none;
-}
-</style>
-
-<a id="top"></a>
 
 # Seg3d Tools
 
 {% comment %}from https://gist.github.com/pepelsbey/9334494{% endcomment %}
 {% capture tmp %}
-  {% for page in site.pages %}
-    {% if page.category == "ToolDocs" %}
-      {{ page.tool }}
-    {% endif %}
-  {% endfor %}
+{% for page in site.pages %}{% if page.category == "ToolDocs" %} {{ page.tool}} {% endif %}{% endfor %}
 {% endcapture %}
 
 {% assign categories = tmp | split: ' ' %}
@@ -44,39 +20,28 @@ div.hidden {
   {% endunless %}
 {% endfor %}
 
-{% assign modulecategories = tmp | split: ' ' %}
+{% assign toolcategories = tmp | split: ' ' %}
 
-{% capture modulepages %}
-  {% for cat in modulecategories %}
-    ?{{ cat }}
+{% capture toolpages %}
+  {% for cat in toolcategories %}?{{ cat }}
     {% for page in site.pages %}
-      {% if page.tool == cat %}
-        ${{ page.title }}#{{ page.url | prepend: site.github.url }}
+      {% if page.tool == cat %}${{ page.title }}#{{ page.url | prepend: site.github.url }}
       {% endif %}
-    {% endfor %}
+    {% endfor%}
   {% endfor %}
 {% endcapture %}
 
-{% assign sortedpages = modulepages | strip | strip_newlines | split: '?' | sort %}
+{% assign sortedpages = toolpages | strip | strip_newlines | split: '?' | sort %}
 
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}
   {% if pageitems[0] %}
-<h2> {{ pageitems[0] }} </h2>
+## {{ pageitems[0] }}
     {% for item in pageitems %}
-### {{item}}
       {% comment %}skip category list item (index 0){% endcomment %}
-      {% if forloop.first %} {% continue %} {% endif %}
+      {% if forloop.first %} {% continue %} {% endif%}
       {% assign linkitem = item | split: '#' %}
-      {% assign contentId = linkitem[0] | prepend: 'id_' %}
-
-<h3> {{ linkitem[0] }} </h3>
-<h3> <a name="{{linkitem[0]}}" data-proofer-ignore></a><a onclick="toggle_visibility('{{ contentId }}');" style="cursor: pointer;" data-proofer-ignore> {{ linkitem[0] }} </a></h3>
-      {% capture mdpath %}{{linkitem[1]}}{% endcapture %}
-      {% capture my-include %}{% include {{mdpath}} %}  {% endcapture %}
-      {% assign importantPart1 = my-include | split: 'Summary' %}
-      {% assign importantPart2 = importantPart1[1] %}
-<div class="hidden" markdown="1" name="{{contentId}}">{{ importantPart2  }} </div>
+**[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
     {% endfor %}
   {% endif %}
 {% endfor %}
