@@ -62,6 +62,19 @@ linux. **Compiler must support C++11.**
 
 Before building Seg3D, please make sure that **Qt 5.5** has been installed on your system.
 
+##### Windows
+
+A typical Qt 5.5 build is as follows:
+
++ Qt will need to be built from the command line using [Visual C++ command line tools](https://msdn.microsoft.com/en-us/library/f35ctcxw(v=vs.120).aspx). Troubleshooting tips can be found [here](http://stackoverflow.com/questions/21476588/where-is-developer-command-prompt-for-vs2013).
++ Refer to the [Qt docs](http://doc.qt.io/qt-5/windows-requirements.html#building-from-source) for requirements for building from source.
++ Run ```configure``` from this new directory with the following parameters (using the ***-fast*** flag to speed up build process can be helpful too):
+
+``` configure -platform win32-msvc2013 -no-gif -qt-libpng -qt-zlib -qt-libjpeg -no-openssl -skip qtwebengine -skip qtwebkit -D _BIND_TO_CURRENT_VCLIBS_VERSION=1 -debug-and-release -opensource -opengl desktop ```
+
++ You will be asked a few questions on license before configuring.
++ Now run nmake and compile all of Qt (this is a long build).
+
 ##### Mac OS X
 
 Qt binaries are available on the Qt website or can be built from source code.
@@ -69,6 +82,10 @@ Qt binaries are available on the Qt website or can be built from source code.
 ##### Linux
 
 Qt 5 static libraries are **NOT** supported. If building from source, ensure that the shared library build is enabled.
+
+If building from source, use the following:
+
+``` ./configure -qt-xcb -qt-zlib -nomake examples -nomake tests -skip qtwayland -skip qtwebengine -skip qtwebkit -opengl desktop ```
 
 #### Seg3D 2.0 to 2.3
 
