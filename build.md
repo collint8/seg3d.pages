@@ -46,13 +46,13 @@ The code has not been tested under Cygwin or MinGW compilers.
 
 ### Mac OS X
 
-The source code base was built with Xcode 5-7 as well as GNU Make and works for both environments on OS X 10.8+.
+The source code base was built with Xcode 5-7 as well as GNU Make and Ninja and works for both environments on OS X 10.8+.
 If building the installer using CPack, PackageMaker is required.
 
 ### Linux
 
 The code base has been tested for use with GCC, and this is the recommended compiler for
-linux. **Compiler must support C++11.**
+linux. GNU Make and Ninja build systems can be used. **Compiler must support C++11.**
 
 ## Dependencies
 
@@ -129,11 +129,12 @@ Once you have obtained a compatible compiler and installed Qt on your system, yo
 download and install CMake (http://www.cmake.org) to actually build the software.
 CMake is a platform independent configuring system that is used for generating Makefiles,
 Visual Studio project files, or Xcode project files.
-Once CMake has been installed, run CMake from your build (bin) directory and give a path to the CMake Superbuild directory containing the master CMakeLists.txt file.
+
+Once CMake has been installed, run CMake from your build (***bin***) directory and give a path to the CMake ***Superbuild*** directory containing the master CMakeLists.txt file.
 
 ### Seg3D 2.4 And Newer
 
-CMake requires a path to the Qt 5 install directory. Typically, this directory will contain bin and lib directories.
+CMake requires a path to the Qt 5 install directory. Typically, this directory will contain ***bin*** and ***lib*** directories.
 For example, for Qt installed on Mac OS X from the Qt 5 binaries on the Qt site:
 
 ```cd bin```
