@@ -52,7 +52,7 @@ This tutorial describes step by step instructions to segment Ascending and Desce
 
 ### Seg3D 
 
-Seg3D is distributed as a binary download for Linux, Windows, and OS X. Please visit the [SCI software portal](http://software.sci.utah.edu) to download the latest Seg3D binary. Any version of 2.0 or higher will do.
+Seg3D is distributed as a binary download for Linux, Windows, and OS X. Please visit the [SCI software portal](https://github.com/sciinstitute/seg3d) to download the latest Seg3D. Any version of 2.0 or higher will do.
 
 ### Required Datasets
 
