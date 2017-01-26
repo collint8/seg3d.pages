@@ -1,6 +1,6 @@
 ---
 title: Seg3d Tutorial
-category: info
+category: documentation
 layout: default
 ---
 
