@@ -19,11 +19,10 @@ The Volume View Window is not opened by default when Seg3D is opened. To open th
 
 {% comment %}from https://gist.github.com/pepelsbey/9334494{% endcomment %}
 {% capture toolpages %}
-    {% for page in site.pages %}
-      {% if page.function.chapter == "VolumeViewWindow" %}${{ page.title }}#{{ page.url | prepend: site.github.url }}
-      {% endif %}
-    {% endfor%}
-  {% endfor %}
+  {% for page in site.pages %}
+    {% if page.function.chapter == "VolumeViewWindow" %}${{ page.title }}#{{ page.url | prepend: site.github.url }}
+    {% endif %}
+  {% endfor%}
 {% endcapture %}
 
 {% assign sortedpages = toolpages | strip | strip_newlines | sort %}
