@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.chapter }}**
 
 ## Description
 
@@ -19,6 +19,6 @@ This option will quit Seg3D. This exists for the rare occasion that you accident
 
 %![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)TODO
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

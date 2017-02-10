@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.function.chapter }}{{ page.function.subchapter }}**
+**{{ page.function.chapter }}**
 
 ## Description
 
@@ -35,6 +35,6 @@ The Volume View Window is not opened by default when Seg3D is opened. To open th
   {% endfor %}
 {% endif %}
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.chapter }}**
 
 ## Description
 
@@ -63,6 +63,6 @@ Table 4.3: List of icons and actions available at the bottom of each layer group
 
 There are some functions that are operated as a group. These are indicated by the icons on the top of the pane, in the orange bar (Shown in [Table 4.2](#layertopicons)). Additionally, there are some other icons at the bottom of the group that control some of the group functions ([Table 4.3](#layerbottomicons)). Hovering the cursor over the icon will display the the use of each additional icon.
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

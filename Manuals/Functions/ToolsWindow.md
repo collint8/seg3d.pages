@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.chapter }}**
 
 ## Description
 
@@ -26,6 +26,6 @@ The tool window houses the current tools that the user has selected from the ’
   <figcaption>Figure 4.2 Tools Window</figcaption>
 </figure>
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.subchapter }}**
 
 ## Description
 
@@ -56,8 +56,6 @@ Table 3.2: List of keyboard actions in the 2D viewers.TODO
 
 Table 3.3: List of icons and actions in the 2D viewers.
 
-%![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)TODO
-
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

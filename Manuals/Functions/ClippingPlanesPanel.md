@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.subchapter }}**
 
 ## Description
 
@@ -28,6 +28,6 @@ In order to activate a clip from any cardinal direction, the user must click the
 
 The final option in the Clipping Planes panel is the option to ’Reverse Normal.’ This option allows the user to reflect the clipping plane. That is, if the image is clipped within the positive XY plane, the ’Reverse Normal’ option will display the clip within the negative XY plane <a href="#ClippingPanel">Figure 4.5</a> shows the result of a clipping plane applied in all three cardinal directions.
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

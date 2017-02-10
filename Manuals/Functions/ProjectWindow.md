@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.chapter }}**
 
 ## Description
 The project window is one of three windows that is opened by default when Seg3D launches. It is located on the left side of the panel and is secondary to the default ’Tools Window’ which is also located on the left but appears over top of the project window. In order to access the window, simply click the tab at the bottom of the left side named ’Current Project’ (See <a href="#ProjectWindow">Figure 4.1</a>) or go to the ’Window’ drop down menu, de-select ’Project Window’ and reselect it.
@@ -24,6 +24,6 @@ At any time the user can export the session to a new location - with or without 
 
 %![alt text]({{ site.github.url }}/Seg3DBasicFunctionality_figures/ProjectWindow.png)
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

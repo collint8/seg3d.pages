@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.chapter }}**
 
 ## Description
 
@@ -19,6 +19,6 @@ This option allows the users to quickly open a project recently opened in Seg3D.
 
 %![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

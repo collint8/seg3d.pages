@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.subchapter }}**
 
 ## Description
 
@@ -24,6 +24,6 @@ Fog density can be tuned by using the slider in the the Volume View Window. By d
 </figure>
 
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 
