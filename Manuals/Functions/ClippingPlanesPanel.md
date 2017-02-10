@@ -2,9 +2,9 @@
 layout: default
 title: ClippingPlanesPanel
 category: FunctionDocs 
-function: VolumeViewWindow
-  chapter:
-  subchapter: 
+function: 
+  chapter: Seg3DWindows
+  subchapter: VolumeViewWindow
 ---
 
 # {{ page.title }} 

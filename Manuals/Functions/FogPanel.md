@@ -3,7 +3,7 @@ layout: default
 title: FogPanel
 category: FunctionDocs 
 function: 
-  chapter:
+  chapter: Seg3DWindows
   subchapter: VolumeViewWindow
 ---
 

@@ -3,7 +3,7 @@ layout: default
 title: 3DVolumeViewer
 category: FunctionDocs 
 function: 
-  chapter:
+  chapter: Seg3DViewer
   subchapter: ViewerPanels 
 ---
 

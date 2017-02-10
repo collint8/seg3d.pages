@@ -3,7 +3,7 @@ layout: default
 title: 2DSliceViewer
 category: FunctionDocs 
 function: 
-  chapter:
+  chapter: Seg3DViewer
   subchapter: ViewerPanels 
 ---
 
