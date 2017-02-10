@@ -11,7 +11,7 @@ function:
 
 ## Category
 
-**{{ page.chapter }}{{ page.subchapter }}**
+**{{ page.function.chapter }}{{ page.function.subchapter }}**
 
 ## Description
 
@@ -25,10 +25,11 @@ The Volume View Window is not opened by default when Seg3D is opened. To open th
   {% endfor%}
 {% endcapture %}
 
-{% assign pageitems = toolpages | strip | strip_newlines | sort | split: '$' %}
+{% assign pageitems = toolpages | strip | strip_newlines | split: '$' | sort %}
 {% if pageitems[0] %}
 ## Functions found within this section.
   {% for item in pageitems %}
+    {%if forloop.first %} {% continue %} {% endif %}
     {% assign linkitem = item | split: '#' %}
 **[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
   {% endfor %}
