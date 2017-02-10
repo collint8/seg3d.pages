@@ -47,7 +47,9 @@ Seg3D is distributed as a binary download for Linux, Windows, and OS X. Please v
 {% capture toolpages %}
   {% for cat in toolcategories %}?{{ cat }}
     {% for page in site.pages %}
-      {% if page.function.chapter == cat %}${{ page.title }}#{{ page.url | prepend: site.github.url }}
+      {% if page.function.subchapter == null %}
+        {% if page.function.chapter == cat %}${{ page.title }}#{{ page.url | prepend: site.github.url }}
+        {% endif %}
       {% endif %}
     {% endfor%}
   {% endfor %}
