@@ -1,6 +1,6 @@
 ---
 layout: default
-title:File
+title: File
 category: FunctionDocs 
 function: 
   chapter: BasicProgramFunctions

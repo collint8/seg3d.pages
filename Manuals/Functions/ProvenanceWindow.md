@@ -1,6 +1,6 @@
 ---
 layout: default
-title:ProvenanceWindow
+title: ProvenanceWindow
 category: FunctionDocs 
 function: 
   chapter: Seg3DWindows

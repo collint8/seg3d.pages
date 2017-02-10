@@ -1,4 +1,4 @@
-{% assign tmp = page.function.subchapter %}
+{% assign tmp = {{page.function.subchapter}} %}
 {% if tmp == null %}
 [Back]({{ site.github.url }}/functionality.md}}
 {% else %}
