@@ -25,18 +25,14 @@ The Volume View Window is not opened by default when Seg3D is opened. To open th
   {% endfor%}
 {% endcapture %}
 
-{% assign sortedpages = toolpages | strip | strip_newlines | sort %}
-
-{% for pagestring in sortedpages %}
-  {% assign pageitems = pagestring | split: '$' %}
-  {% if pageitems[0] %}
+{% assign pageitems = toolpages | strip | strip_newlines | sort | split: '$' %}
+{% if pageitems[0] %}
 ## Functions found within this section.
-    {% for item in pageitems %}
-      {% assign linkitem = item | split: '#' %}
+  {% for item in pageitems %}
+    {% assign linkitem = item | split: '#' %}
 **[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
-    {% endfor %}
-  {% endif %}
-{% endfor %}
+  {% endfor %}
+{% endif %}
 
 {% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
