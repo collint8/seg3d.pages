@@ -26,6 +26,6 @@ The tool window houses the current tools that the user has selected from the ’
   <figcaption>Figure 4.2 Tools Window</figcaption>
 </figure>
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

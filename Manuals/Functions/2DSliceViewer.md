@@ -56,6 +56,17 @@ Table 3.2: List of keyboard actions in the 2D viewers.TODO
 
 Table 3.3: List of icons and actions in the 2D viewers.
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
-{{ url }}
+{% capture tmp %}{{page.function.subchapter}}{% endcapture %}
+{% if tmp == null %}
+[Back]({{ site.github.url }}/functionality.md)
+{% else %}
+  {% for page in site.pages %}
+    {% if page.title == tmp %}
+[Back]({{ page.url | prepend site.github.url }})
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% capture url %}{% include url.md%}{% endcapture %}
+
 

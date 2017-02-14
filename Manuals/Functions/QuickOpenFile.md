@@ -20,6 +20,6 @@ This option does not allow the opening of image stacks.
 
 %![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)TODO
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

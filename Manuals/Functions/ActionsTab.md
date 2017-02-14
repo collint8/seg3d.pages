@@ -36,6 +36,6 @@ The user can then define the parameters for the action, or simply press enter to
   <figcaption>Figure 4.11 Action usability message.</figcaption>
 </figure>
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

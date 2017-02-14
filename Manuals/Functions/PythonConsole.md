@@ -24,6 +24,6 @@ The Python Window opens a Python scripting console that can be used by advanced 
   <figcaption>Figure 4.13 Python Console Window</figcaption>
 </figure>
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

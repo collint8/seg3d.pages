@@ -41,6 +41,6 @@ By clicking on the switch tool icon ([Table TODO3.7](#toolbaricons)), the tool 
 
 %![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)TODO
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

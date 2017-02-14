@@ -90,6 +90,6 @@ If image data layer is selected, then the user may choose to Export Active Data 
 
 This menu shows recently opened projects. These projects can be opened quickly by clicking on the name of the project.
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

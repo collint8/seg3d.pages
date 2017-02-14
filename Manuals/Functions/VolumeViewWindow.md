@@ -35,6 +35,6 @@ The Volume View Window is not opened by default when Seg3D is opened. To open th
   {% endfor %}
 {% endif %}
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

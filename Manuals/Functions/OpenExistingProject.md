@@ -19,6 +19,6 @@ This option is the same as the **File** ⇒ **Open Project** ([TODO](#open-proje
 
 %![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)TODO
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

@@ -36,6 +36,6 @@ The Controller window supplies the user with all of the data, variables, history
   {% endfor %}
 {% endif %}
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

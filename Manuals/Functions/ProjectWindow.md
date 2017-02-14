@@ -24,6 +24,6 @@ At any time the user can export the session to a new location - with or without 
 
 %![alt text]({{ site.github.url }}/Seg3DBasicFunctionality_figures/ProjectWindow.png)
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

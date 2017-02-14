@@ -23,6 +23,6 @@ The state variables tab shows a list of all the state settings for the session. 
 </figure>
 
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

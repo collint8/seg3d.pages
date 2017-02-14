@@ -53,6 +53,6 @@ Table 3.6: List of icons and actions in the 3D viewer
 
 %![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)TODO
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

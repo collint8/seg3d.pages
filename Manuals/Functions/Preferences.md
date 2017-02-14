@@ -57,6 +57,6 @@ Under this tab the user can select which menus appear on start up and which tool
   <figcaption>Figure 5.8 The Seg3d preferences under the sidebars/tools + filters tab.</figcaption>
 </figure>
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

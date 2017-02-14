@@ -19,6 +19,6 @@ The windows on docked the side of the screen can be any of five windows explaine
 
 %![alt text]({{ site.github.url }}/images/{{ page.title }}GUI.png)TODO
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 

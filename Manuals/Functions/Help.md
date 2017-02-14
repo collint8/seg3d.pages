@@ -25,6 +25,6 @@ This feature allows you to search all the menus by typing in a search box.
 
 This function opens a list of all the keyboard and mouse shortcuts available in Seg3D.
 
-{% capture url %}{% include functionurl.md%}{% endcapture %}
+{% capture url %}{% include url.md%}{% endcapture %}
 {{ url }}
 
