@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Edit.md
+title: Edit
 category: FunctionDocs 
 function: 
   chapter: BasicProgramFunctions

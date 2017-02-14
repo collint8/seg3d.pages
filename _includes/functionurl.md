@@ -1,4 +1,4 @@
-{% capture tmp = {{page.function.subchapter}} %}{% endcapture %}
+{% capture tmp %}{{page.function.subchapter}}{% endcapture %}
 {% if tmp == null %}
 [Back]({{ site.github.url }}/functionality.md}}
 {% else %}
