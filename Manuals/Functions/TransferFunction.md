@@ -21,6 +21,6 @@ Each of the features observed can also be enabled/disabled and viewed as solid o
 
 Each point and feature can be repositioned, reshaped, and recolored in order to distinguish between defined regions. To change the color of a feature, select the desired feature and adjust the slider regions below the histogram in the Red/Green/Blue features. Colors can be used to easily distinguish different features in the volume. Additionally, each features Ambient and Specular lighting can be adjusted as well as volume shininess is adjustable
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

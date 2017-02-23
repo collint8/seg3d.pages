@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Seg3D Basic Functionality
-category: info 
+category: documentation
 ---
  
 # Overview
@@ -13,8 +13,8 @@ Note: If you are looking for a refresher on the available keyboard and mouse sho
 ## About Seg3D
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/layout.png" id="layout">
-  <figcaption>TODO</figcaption>
+  <img src="Manuals/Seg3DBasicFunctionality_figures/layout.png" id="layout">
+  <figcaption>Figure 1.1 Seg3D in use.</figcaption>
 </figure>
 
 Seg3D is a lightweight software tool developed for use in visualizing and segmenting image data. The core intended use of Seg3D involves loading 3D scalar data, such as MRI or CT scans, and generating labels mask to identify various regions of interest in the original image data. Seg3D facilitates the process using interactive tools such as image processing filters and manual masking techniques.
@@ -25,7 +25,7 @@ Seg3D is an crucial element of our software suite also involving BioMesh3D and S
 
 ## Software Requirements
 
-Seg3D is distributed as a binary download for Linux, Windows, and OS X. Please visit the [SCI software portal](https://github.com/SCIInstitute/Seg3D.git) to download the latest Seg3D binary.TODO
+Seg3D is distributed as a binary download for Linux, Windows, and OS X. Please visit the [SCI software portal](https://github.com/SCIInstitute/Seg3D.git) to download the latest Seg3D binary.[](#TODO)
 
 
 {% comment %}from https://gist.github.com/pepelsbey/9334494{% endcomment %}
@@ -65,7 +65,7 @@ Seg3D is distributed as a binary download for Linux, Windows, and OS X. Please v
       {% comment %}skip category list item (index 0){% endcomment %}
       {% if forloop.first %} {% continue %} {% endif%}
       {% assign linkitem = item | split: '#' %}
-**[{{ linkitem[0] }}]({{ linkitem[1] }}){:target="_blank"}**
+**[{{ linkitem[0] }}]({{ linkitem[1] }})**
     {% endfor %}
   {% endif %}
 {% endfor %}

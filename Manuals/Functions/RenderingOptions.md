@@ -18,7 +18,7 @@ function:
 With these two options selected, the user now has three rendering options. These options are Simple, Faux Shading, and Ambient Occlusion.
 
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/VolRendOpt.png" id="VolRendOpt">
+  <img src="../Seg3DBasicFunctionality_figures/VolRendOpt.png" id="VolRendOpt">
   <figcaption>Figure 4.7 Volume Rendering Options - A) Simple B) Faux Shading C) Ambient Occlusion</figcaption>
 </figure>
 
@@ -34,6 +34,6 @@ Faux Shading is the same as the simple rendering option with the exception that 
 
 Ambient Occlusion has several additional options. In addition to the sampling rate, an occlusion angle (range: 0 to 80 degrees) and a sample resolution (range: 1 to 10) are now available.
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

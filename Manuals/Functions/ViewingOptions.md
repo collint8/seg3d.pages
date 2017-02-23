@@ -62,6 +62,6 @@ This generates six viewers, the maximum number, three on the left and right. Thi
 | Alt+5               | Two and Three                         |
 | Alt+6               | Three and Three                       |
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 

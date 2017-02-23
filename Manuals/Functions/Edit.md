@@ -35,7 +35,5 @@ Paste a previously copied label from one slice of a mask label to all the slices
 ### Punch Through Volume
 
 After creating new label data on a single slice of a mask layer, that label can be copied or “punched” to every other slice by selecting this option. This function can be called using the shortcut CTRL/CMD+P.
-
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md %}{% endcapture %}
 {{ url }}
-

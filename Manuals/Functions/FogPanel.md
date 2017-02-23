@@ -19,11 +19,11 @@ The Fog Panel allows the user to control the fog density. In order to observe th
 
 Fog density can be tuned by using the slider in the the Volume View Window. By default the density value is 1.00. If the fog density increases, the fogging effect increases.
 <figure>
-  <img src="Seg3DBasicFunctionality_figures/FogPanel.png" id="FogPanel">
+  <img src="../Seg3DBasicFunctionality_figures/FogPanel.png" id="FogPanel">
   <figcaption>Figure 4.4 Volume View Window - Fog Panel Displayed. The user must activate the Show fog option at the bottom of the viewer window.</figcaption>
 </figure>
 
 
-{% capture url %}{% include url.md%}{% endcapture %}
+{% capture url %}{% include functionurl.md%}{% endcapture %}
 {{ url }}
 
