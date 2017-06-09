@@ -132,6 +132,8 @@ Visual Studio project files, or Xcode project files.
 
 Once CMake has been installed, run CMake from your build (***bin***) directory and give a path to the CMake ***Superbuild*** directory containing the master CMakeLists.txt file.
 
+You may build Seg3D with [Ninja](https://ninja-build.org) by adding the tag "`-G Ninja`" to your cmake command. Note: Mac users will have to install Ninja with [Homebrew](https://brew.sh). 
+
 ### Seg3D 2.4 And Newer
 
 CMake requires a path to the Qt 5 install directory. Typically, this directory will contain ***bin*** and ***lib*** directories.
