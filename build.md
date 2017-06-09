@@ -60,11 +60,11 @@ linux. GNU Make and Ninja build systems can be used. **Compiler must support C++
 
 #### Seg3D 2.4 And Newer
 
-Before building Seg3D, please make sure that **Qt 5.5** has been installed on your system.
+Before building Seg3D, please make sure that **Qt 5.9** has been installed on your system.
 
 ##### Windows
 
-A typical Qt 5.5 build is as follows:
+A typical Qt 5.9 build is as follows:
 
 + Qt will need to be built from the command line using [Visual C++ command line tools](https://msdn.microsoft.com/en-us/library/f35ctcxw(v=vs.120).aspx). Troubleshooting tips can be found [here](http://stackoverflow.com/questions/21476588/where-is-developer-command-prompt-for-vs2013).
 + Refer to the [Qt docs](http://doc.qt.io/qt-5/windows-requirements.html#building-from-source) for requirements for building from source.
