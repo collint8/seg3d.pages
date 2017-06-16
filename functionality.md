@@ -55,7 +55,7 @@ Seg3D is distributed as a binary download for Linux, Windows, and OS X. Please v
   {% endfor %}
 {% endcapture %}
 
-{% assign sortedpages = toolpages | strip | strip_newlines | split: '?' | sort %}
+{% assign sortedpages = toolpages | strip | strip_newlines | split: '?' %}
 
 {% for pagestring in sortedpages %}
   {% assign pageitems = pagestring | split: '$' %}

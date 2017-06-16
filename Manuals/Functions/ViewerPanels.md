@@ -16,7 +16,7 @@ function:
 ## Description
 
 <figure>
-  <img src="Manuals/Seg3DBasicFunctionality_figures/layout_blank.pdf" id="blank">
+  <img src="../Manuals/Seg3DBasicFunctionality_figures/layout_blank.pdf" id="blank">
   <figcaption>Figure 3.1 Seg3D interface.</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ As seen in [Figure 3.1](#blank), there are a number of viewer panels in Seg3D, t
   {% endfor%}
 {% endcapture %}
 
-{% assign pageitems = toolpages | strip | strip_newlines | split: '$' | sort %}
+{% assign pageitems = toolpages | strip | strip_newlines | split: '$' %}
 {% if pageitems[0] %}
   {% for item in pageitems %}
     {%if forloop.first %} {% continue %} {% endif %}

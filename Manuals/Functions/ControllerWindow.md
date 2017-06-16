@@ -27,7 +27,7 @@ The Controller window supplies the user with all of the data, variables, history
   {% endfor%}
 {% endcapture %}
 
-{% assign pageitems = toolpages | strip | strip_newlines | split: '$' | sort %}
+{% assign pageitems = toolpages | strip | strip_newlines | split: '$' %}
 {% if pageitems[0] %}
   {% for item in pageitems %}
     {%if forloop.first %} {% continue %} {% endif %}
