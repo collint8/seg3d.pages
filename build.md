@@ -67,7 +67,7 @@ Before building Seg3D, please make sure that **Qt 5.9** has been installed on yo
 A typical Qt 5.9 build is as follows:
 
 + Qt will need to be built from the command line using [Visual C++ command line tools](https://msdn.microsoft.com/en-us/library/f35ctcxw(v=vs.120).aspx). Troubleshooting tips can be found [here](http://stackoverflow.com/questions/21476588/where-is-developer-command-prompt-for-vs2013).
-+ Refer to the [Qt docs](http://doc.qt.io/qt-5/windows-requirements.html#building-from-source) for requirements for building from source.
++ Refer to the [Qt docs](http://doc.qt.io/qt-5/windows-requirements.html#building-from-source) for requirements for building from source. The Python and Perl dependencies are required.
 + Run ```configure``` from this new directory with the following parameters (using the ***-fast*** flag to speed up build process can be helpful too):
 
 ``` configure -platform win32-msvc2013 -no-gif -qt-libpng -qt-zlib -qt-libjpeg -no-openssl -skip qtwebengine -skip qtwebkit -D _BIND_TO_CURRENT_VCLIBS_VERSION=1 -debug-and-release -opensource -opengl desktop ```
